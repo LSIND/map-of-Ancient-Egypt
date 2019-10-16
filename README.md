@@ -39,14 +39,51 @@ pip install folium
 **4. Arrange pyramids into periods:**
 > <p align="justify"><i>I am taking in consideration only Early Dynastic Period, Old Kingdom, FIP, Middle Kingdom, SIP and the beginning of New Kingdom.</i></p>
 
-|   | Period                                                 | Years (approx.)         | Dynasties                                                                                                                                                                                                                                                                                                              |
-|---|--------------------------------------------------------|-------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 1 | Early Dynastic Period                                  | c. 3150 BC – c. 2686 BC | 1. First Dynasty of Egypt (ca. 3100 BC – ca. 2900 BC) <br> 2. Second Dynasty of Egypt (c. 2890 BC – c. 2686 BC)                                                                                                                                                                                                        |
-| 2 | Old Kingdom <br> (*Age of the Pyramids*)               | c. 2686 BC – c. 2181 BC | 3. Third Dynasty of Egypt (ca. 2686 BC–ca. 2613 BC) <br> 4. Fourth Dynasty of Egypt (ca. 2613 BC–ca. 2494 BC) <br> 5. Fifth Dynasty of Egypt (ca. 2494 BC–ca. 2345 BC) <br> 6. Sixth Dynasty of Egypt (ca. 2345 BC–ca. 2181 BC) <br>     - *Seventh Dynasty of Egypt is considered spurious*                           |
-| 3 | First Intermediate <br> Period (FIP) <br> (*Dark age*) | c. 2181 BC – c. 2055 BC | 8. Eight Dynasty of Egypt (ca. 2181 BC–ca. 2160 BC)<br> 9. Ninth Dynasty of Egypt (ca. 2160 BC–ca. 2130 BC)<br> 10. Tenth Dynasty of Egypt (ca. 2130 BC–ca. 2040 BC)<br>     - *these dynasties are often combined*                                                                                                    |
-| 4 | Middle Kingdom <br> (*Reunification*)                  | c. 2055 BC – c. 1650 BC | 11. Eleventh Dynasty of Egypt (ca. 2130 BC–ca. 1991 BC) <br> 12. Twelfth Dynasty of Egypt (1991 BC–1802 BC) <br> 13. Thirteenth Dynasty of Egypt (1803 BC–1649 BC) <br> 14. Fourteenth Dynasty of Egypt (ca. 1725 BC–ca. 1650 BC) <br>     - *these dynasties are often combined under the group title Middle Kingdom* |
-| 5 | Second Intermediate Period (SIP)                       | c. 1650 BC – c. 1550 BC | 15. Fifteenth Dynasty of Egypt (1650 BC–ca. 1550 BC) <br> 16. Sixteenth Dynasty of Egypt (1649 BC–1582 BC) <br> 17. Seventeenth Dynasty of Egypt (ca. 1580 BC–ca. 1550 BC)                                                                                                                                             |
-| 6 | New Kingdom <br> (*Egyptian Empire*)                   | c. 1550 BC – c. 1069 BC | 18. Eighteenth Dynasty of Egypt (1550 BC–1292 BC)                                                                                                                                                                                                                                                                      |
+<table class="tg">
+  <tr>
+    <th class="tg-7p3h"></th>
+    <th class="tg-7p3h"><sup>Period</sup></th>
+    <th class="tg-7p3h"><sup>Years (approx.)</sup></th>
+    <th class="tg-7p3h"><sup>Dynasties</sup></th>
+  </tr>
+  <tr>
+    <td class="tg-7p3h"><sup>1</sup></td>
+    <td class="tg-7p3h"><sup>Early Dynastic Period</sup></td>
+    <td class="tg-7p3h"><sup>c. 3150 BC – c. 2686 BC</sup></td>
+    <td class="tg-7p3h"><sup>1. First Dynasty of Egypt (ca. 3100 BC – ca. 2900 BC)<br>2. Second Dynasty of Egypt (c. 2890 BC – c. 2686 BC)</sup></td>
+  </tr>
+  <tr>
+    <td class="tg-7p3h"><sup>2</sup></td>
+    <td class="tg-7p3h"><sup>Old Kingdom<br><i>Age of the Pyramids</i></sup></td>
+    <td class="tg-7p3h"><sup>c. 2686 BC – c. 2181 BC</sup></td>
+    <td class="tg-7p3h"><sup>3. Third Dynasty of Egypt (ca. 2686 BC – ca. 2613 BC)<br>4. Fourth Dynasty of Egypt (ca. 2613 BC – ca. 2494 BC)<br>5. Fifth Dynasty of Egypt (ca. 2494 BC – ca. 2345 BC)<br>6. Sixth Dynasty of Egypt (ca. 2345 BC – ca. 2181 BC)<br><i> - Seventh Dynasty of Egypt is considered spurious</sup></td>
+  </tr>
+  <tr>
+    <td class="tg-7p3h"><sup>3</sup></td>
+    <td class="tg-7p3h"><sup>First Intermediate<br>Period (FIP)<br><i>Dark age</i></sup></td>
+    <td class="tg-7p3h"><sup>c. 2181 BC – c. 2055 BC</sup></td>
+    <td class="tg-7p3h"><sup>8. Eight Dynasty of Egypt (ca. 2181 BC – ca. 2160 BC)<br>9. Ninth Dynasty of Egypt (ca. 2160 BC – ca. 2130 BC)<br>10. Tenth Dynasty of Egypt (ca. 2130 BC – ca. 2040 BC)<br><i> - these dynasties are often combined</i></sup></td>
+  </tr>
+  <tr>
+    <td class="tg-8hko"><sup>4</sup></td>
+    <td class="tg-8hko"><sup>Middle Kingdom<br><i>Reunification</i></sup></td>
+    <td class="tg-8hko"><sup>c. 2055 BC – c. 1650 BC</sup></td>
+    <td class="tg-8hko"><sup>11. Eleventh Dynasty of Egypt (ca. 2130 BC – ca. 1991 BC)<br>12. Twelfth Dynasty of Egypt (1991 BC – 1802 BC)<br>13. Thirteenth Dynasty of Egypt (1803 BC – 1649 BC)<br>14. Fourteenth Dynasty of Egypt (ca. 1725 BC – ca. 1650 BC)<br><i>- these dynasties are often combined under the group title <br> Middle Kingdom</i></sup></td>
+  </tr>
+  <tr>
+    <td class="tg-8hko"><sup>5</sup></td>
+    <td class="tg-8hko"><sup>Second Intermediate<br>Period (SIP)</sup></td>
+    <td class="tg-8hko"><sup>c. 1650 BC – c. 1550 BC</sup></td>
+    <td class="tg-8hko"><sup>15. Fifteenth Dynasty of Egypt (1650 BC – ca. 1550 BC)<br>16. Sixteenth Dynasty of Egypt (1649 BC – 1582 BC)<br>17. Seventeenth Dynasty of Egypt (ca. 1580 BC – ca. 1550 BC)</sup></td>
+  </tr>
+  <tr>
+    <td class="tg-8hko"><sup>6</sup></td>
+    <td class="tg-8hko"><sup>New Kingdom<br><i>Egyptian Empire</i></sup></td>
+    <td class="tg-8hko"><sup>c. 1550 BC – c. 1069 BC</sup></td>
+    <td class="tg-8hko"><sup>18. Eighteenth Dynasty of Egypt (1550 BC – 1292 BC)</sup></td>
+  </tr>
+</table>
+</sup>
 
 **5. Some preparations before creating marks on the map:**
   - find mean latitude and longitude of dataset;
