@@ -37,7 +37,7 @@ pip install folium
 - maximum height of pyramid is 145 meters (ruined Pyramid Lepsius I) and minimum - 6.8 m (Pyramid of Seila).
 
 **4. Arrange pyramids into periods:**
-<p align="justify"><i>I am taking in consideration only Early Dynastic Period, Old Kingdom, FIP, Middle Kingdom, SIP and the beginning of New Kingdom.</i></p>
+> <p align="justify"><i>I am taking in consideration only Early Dynastic Period, Old Kingdom, FIP, Middle Kingdom, SIP and the beginning of New Kingdom.</i></p>
 
 |   | Period                                                 | Years (approx.)         | Dynasties                                                                                                                                                                                                                                                                                                              |
 |---|--------------------------------------------------------|-------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -59,7 +59,6 @@ pip install folium
 
 ### :earth_africa: View in browser: [OpenStreetMap of 62 pyramids](https://lsind.github.io/map-of-Ancient-Egypt/map-pyramids.html)
 
-  ```Result: Map with pyramids on it!```
    - glyphicon with open eye shows if Pharaoh' name is certain
    - Early Dyn. Peroiod: &#x1F49C; (violet), Old Kingdom: &#x1F49A; (green), FIP: &#x1F499; (blue), Middle Kingdom: &#x1F536; (orange), SIP: &#x1F49B; (yellow), New Kingdom: :heart: (red)
 
@@ -70,10 +69,13 @@ pip install folium
 
 ![Lepsius Map](https://www.dropbox.com/s/fs0qougstmvdkow/mapL.JPG?raw=1)
 
-```Result: Lepsius Map!```
 
 ### :earth_africa: View in browser: [OpenStreetMap of Lepsius list](https://lsind.github.io/map-of-Ancient-Egypt/map-lepsius.html)
 
-### &#x1F53A; The interactive maps in my [Kaggle notebook](https://www.kaggle.com/lsind18/pyramids-of-ancient-egypt-on-a-map)
+------------------------------
+
+### :small_red_triangle: The interactive maps in my [Kaggle notebook](https://www.kaggle.com/lsind18/pyramids-of-ancient-egypt-on-a-map)
+
+### :page_facing_up:  Source code on GitHub [.py and .ipynb](https://github.com/LSIND/map-of-Ancient-Egypt/tree/master/source)
 
 P.S. Feel free to contact me if you have some additional info about [Egyptian pyramids dataset](https://www.kaggle.com/lsind18/egyptianpyramids).
