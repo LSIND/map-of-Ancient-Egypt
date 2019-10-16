@@ -1,0 +1,1637 @@
+<html>
+<body>
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_8ce48ac6bc3f408ab7f3140f2b4077a7 {
+                    position: relative;
+                    width: 600.0px;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+     <div style= "position: fixed; 
+     bottom: 45px; left: 15px; width: 150px; height: 150px;white-space: pre-line; 
+     border:1px solid grey; z-index:9999; font-size:10px; background-color:white;
+     ">&nbsp; <b>Period</b>
+    &nbsp; Early Dyn. Period &emsp;<i class="fa fa-caret-up fa-2x"
+                  style="color:violet"></i>
+     &nbsp; Old Kingdom &emsp;<i class="fa fa-caret-up fa-2x"
+                  style="color:green"></i>
+     &nbsp; FIP &emsp;<i class="fa fa-caret-up fa-2x"
+                  style="color:lightblue"></i>
+     &nbsp; Middle Kingdom &emsp;<i class="fa fa-caret-up fa-2x"
+                  style="color:orange"></i>
+    &nbsp; SIP &emsp;<i class="fa fa-caret-up fa-2x"
+                  style="color:yellow"></i>
+    &nbsp; New Kingdom &emsp;<i class="fa fa-caret-up fa-2x"
+                  style="color:red"></i>
+      </div>
+     
+    
+            <div class="folium-map" id="map_8ce48ac6bc3f408ab7f3140f2b4077a7" ></div>
+        
+</body>
+<script>    
+    
+            var map_8ce48ac6bc3f408ab7f3140f2b4077a7 = L.map(
+                "map_8ce48ac6bc3f408ab7f3140f2b4077a7",
+                {
+                    center: [29.226241387096778, 31.319200096774196],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 6,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_8ce48ac6bc3f408ab7f3140f2b4077a7);
+
+            
+
+        
+    
+            var tile_layer_0a1c39b804c545b384c8d99065817ee4 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 5, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_8ce48ac6bc3f408ab7f3140f2b4077a7);
+        
+    
+            var marker_bcd482b3a2ef411e9f051ac9053eb940 = L.marker(
+                [29.871215000000003, 31.216644],
+                {}
+            ).addTo(map_8ce48ac6bc3f408ab7f3140f2b4077a7);
+        
+    
+            var icon_ae005a9d19a248f19063d0c75ed5d300 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "eye-close", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_bcd482b3a2ef411e9f051ac9053eb940.setIcon(icon_ae005a9d19a248f19063d0c75ed5d300);
+        
+    
+        var popup_c510eecd55114bf19a0199396473ca02 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c1378a894c3e4c13b41a97e715ed0564 = $(`<div id="html_c1378a894c3e4c13b41a97e715ed0564" style="width: 100.0%; height: 100.0%;">Step Pyramid of Djoser</div>`)[0];
+            popup_c510eecd55114bf19a0199396473ca02.setContent(html_c1378a894c3e4c13b41a97e715ed0564);
+        
+
+        marker_bcd482b3a2ef411e9f051ac9053eb940.bindPopup(popup_c510eecd55114bf19a0199396473ca02)
+        ;
+
+        
+    
+    
+            var marker_cec7d919935347528e35759b849ade2f = L.marker(
+                [29.866, 31.213],
+                {}
+            ).addTo(map_8ce48ac6bc3f408ab7f3140f2b4077a7);
+        
+    
+            var icon_18ad7d53a844494d8ba681eb7aaee238 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "eye-close", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_cec7d919935347528e35759b849ade2f.setIcon(icon_18ad7d53a844494d8ba681eb7aaee238);
+        
+    
+        var popup_7850b5d35969411dbc5d5ca4f63e2d02 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_73b27af69f1045be81f7eb9d4bcf8ecf = $(`<div id="html_73b27af69f1045be81f7eb9d4bcf8ecf" style="width: 100.0%; height: 100.0%;">Buried Pyramid</div>`)[0];
+            popup_7850b5d35969411dbc5d5ca4f63e2d02.setContent(html_73b27af69f1045be81f7eb9d4bcf8ecf);
+        
+
+        marker_cec7d919935347528e35759b849ade2f.bindPopup(popup_7850b5d35969411dbc5d5ca4f63e2d02)
+        ;
+
+        
+    
+    
+            var marker_f307a3db4c0c4f3d86139295d3908a52 = L.marker(
+                [29.93282, 31.161262],
+                {}
+            ).addTo(map_8ce48ac6bc3f408ab7f3140f2b4077a7);
+        
+    
+            var icon_cf260c85b9a3491283517066f0bef6e2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "eye-open", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_f307a3db4c0c4f3d86139295d3908a52.setIcon(icon_cf260c85b9a3491283517066f0bef6e2);
+        
+    
+        var popup_444a9d4f594a46e5b1764a4b5164b607 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8a5395a95f0e48dd8fdfd570b8519106 = $(`<div id="html_8a5395a95f0e48dd8fdfd570b8519106" style="width: 100.0%; height: 100.0%;">Layer Pyramid</div>`)[0];
+            popup_444a9d4f594a46e5b1764a4b5164b607.setContent(html_8a5395a95f0e48dd8fdfd570b8519106);
+        
+
+        marker_f307a3db4c0c4f3d86139295d3908a52.bindPopup(popup_444a9d4f594a46e5b1764a4b5164b607)
+        ;
+
+        
+    
+    
+            var marker_b205cda50f634e75bdd71ba2f30a45de = L.marker(
+                [30.040833000000003, 31.094444],
+                {}
+            ).addTo(map_8ce48ac6bc3f408ab7f3140f2b4077a7);
+        
+    
+            var icon_156a3865dc3041b2a886437093ff2b5c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "eye-close", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_b205cda50f634e75bdd71ba2f30a45de.setIcon(icon_156a3865dc3041b2a886437093ff2b5c);
+        
+    
+        var popup_5a221e0f06c44650b8cc645a63f0f16e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d8d7544b08e345b1830cec419e98506b = $(`<div id="html_d8d7544b08e345b1830cec419e98506b" style="width: 100.0%; height: 100.0%;">Pyramid Lepsius I</div>`)[0];
+            popup_5a221e0f06c44650b8cc645a63f0f16e.setContent(html_d8d7544b08e345b1830cec419e98506b);
+        
+
+        marker_b205cda50f634e75bdd71ba2f30a45de.bindPopup(popup_5a221e0f06c44650b8cc645a63f0f16e)
+        ;
+
+        
+    
+    
+            var marker_21b62ab6e79140bab9b92ae46d51efe0 = L.marker(
+                [30.470556, 31.188056],
+                {}
+            ).addTo(map_8ce48ac6bc3f408ab7f3140f2b4077a7);
+        
+    
+            var icon_efc9b85630d343be8bf6ba989cda8897 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "eye-open", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_21b62ab6e79140bab9b92ae46d51efe0.setIcon(icon_efc9b85630d343be8bf6ba989cda8897);
+        
+    
+        var popup_7790a26e89624cc5a539fd602f9f6ec9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e54b5f30c5404227b20d79a44a6e8f83 = $(`<div id="html_e54b5f30c5404227b20d79a44a6e8f83" style="width: 100.0%; height: 100.0%;">Pyramid of Athribis</div>`)[0];
+            popup_7790a26e89624cc5a539fd602f9f6ec9.setContent(html_e54b5f30c5404227b20d79a44a6e8f83);
+        
+
+        marker_21b62ab6e79140bab9b92ae46d51efe0.bindPopup(popup_7790a26e89624cc5a539fd602f9f6ec9)
+        ;
+
+        
+    
+    
+            var marker_9c2d076d15184417aff2e05084de500a = L.marker(
+                [24.085556, 32.885278],
+                {}
+            ).addTo(map_8ce48ac6bc3f408ab7f3140f2b4077a7);
+        
+    
+            var icon_ae19a572d9514d02be3eb46543a5194a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "eye-open", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_9c2d076d15184417aff2e05084de500a.setIcon(icon_ae19a572d9514d02be3eb46543a5194a);
+        
+    
+        var popup_b4f334c62b244b1e9f277ce6278aee64 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fa3fec9304da4a8693bba2711d146e00 = $(`<div id="html_fa3fec9304da4a8693bba2711d146e00" style="width: 100.0%; height: 100.0%;">Pyramid of Elephantine</div>`)[0];
+            popup_b4f334c62b244b1e9f277ce6278aee64.setContent(html_fa3fec9304da4a8693bba2711d146e00);
+        
+
+        marker_9c2d076d15184417aff2e05084de500a.bindPopup(popup_b4f334c62b244b1e9f277ce6278aee64)
+        ;
+
+        
+    
+    
+            var marker_3e36d8eab0014145a021dac8a9031e6b = L.marker(
+                [24.943610999999997, 32.841944],
+                {}
+            ).addTo(map_8ce48ac6bc3f408ab7f3140f2b4077a7);
+        
+    
+            var icon_97de2e8e7ae742b5ab961f8aa1d3a396 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "eye-open", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_3e36d8eab0014145a021dac8a9031e6b.setIcon(icon_97de2e8e7ae742b5ab961f8aa1d3a396);
+        
+    
+        var popup_f12cd53e88b8410d82fd42ae6b8918cc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_97e81cb869ce43a4866872b27a122e0b = $(`<div id="html_97e81cb869ce43a4866872b27a122e0b" style="width: 100.0%; height: 100.0%;">Edfu South Pyramid</div>`)[0];
+            popup_f12cd53e88b8410d82fd42ae6b8918cc.setContent(html_97e81cb869ce43a4866872b27a122e0b);
+        
+
+        marker_3e36d8eab0014145a021dac8a9031e6b.bindPopup(popup_f12cd53e88b8410d82fd42ae6b8918cc)
+        ;
+
+        
+    
+    
+            var marker_14093dc404064051afd75d7616b68ddb = L.marker(
+                [25.116667, 32.8],
+                {}
+            ).addTo(map_8ce48ac6bc3f408ab7f3140f2b4077a7);
+        
+    
+            var icon_4a77e73c1baf4be49532faeaa109c086 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "eye-open", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_14093dc404064051afd75d7616b68ddb.setIcon(icon_4a77e73c1baf4be49532faeaa109c086);
+        
+    
+        var popup_6d2711fe39984723924d1d6ec8979fa0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5d5976ade5ba4bea91c77c5352ecdb50 = $(`<div id="html_5d5976ade5ba4bea91c77c5352ecdb50" style="width: 100.0%; height: 100.0%;">Al Kula Pyramid</div>`)[0];
+            popup_6d2711fe39984723924d1d6ec8979fa0.setContent(html_5d5976ade5ba4bea91c77c5352ecdb50);
+        
+
+        marker_14093dc404064051afd75d7616b68ddb.bindPopup(popup_6d2711fe39984723924d1d6ec8979fa0)
+        ;
+
+        
+    
+    
+            var marker_d27aac8f830d4074a61947430b904aa0 = L.marker(
+                [25.940556, 32.709167],
+                {}
+            ).addTo(map_8ce48ac6bc3f408ab7f3140f2b4077a7);
+        
+    
+            var icon_148f95d66dd943cdb95209fbf2f7f0d4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "eye-open", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_d27aac8f830d4074a61947430b904aa0.setIcon(icon_148f95d66dd943cdb95209fbf2f7f0d4);
+        
+    
+        var popup_3f430882263b41f5b540b5fff39ddfd9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f4b19ef0cd2d4ae8ae5d990e6d234536 = $(`<div id="html_f4b19ef0cd2d4ae8ae5d990e6d234536" style="width: 100.0%; height: 100.0%;">Pyramid of Naqada (Pyramid of Ombos)</div>`)[0];
+            popup_3f430882263b41f5b540b5fff39ddfd9.setContent(html_f4b19ef0cd2d4ae8ae5d990e6d234536);
+        
+
+        marker_d27aac8f830d4074a61947430b904aa0.bindPopup(popup_3f430882263b41f5b540b5fff39ddfd9)
+        ;
+
+        
+    
+    
+            var marker_3432d724dabb448080589097a78cd6b0 = L.marker(
+                [26.157778, 31.966110999999998],
+                {}
+            ).addTo(map_8ce48ac6bc3f408ab7f3140f2b4077a7);
+        
+    
+            var icon_fcd3ed5b2e454fe5ac8bc05db5dd4073 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "eye-open", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_3432d724dabb448080589097a78cd6b0.setIcon(icon_fcd3ed5b2e454fe5ac8bc05db5dd4073);
+        
+    
+        var popup_304514dc109846548cf373712012f7b0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_65a0c76a74184ed7996c056fe7e692ac = $(`<div id="html_65a0c76a74184ed7996c056fe7e692ac" style="width: 100.0%; height: 100.0%;">Pyramid of Sinki</div>`)[0];
+            popup_304514dc109846548cf373712012f7b0.setContent(html_65a0c76a74184ed7996c056fe7e692ac);
+        
+
+        marker_3432d724dabb448080589097a78cd6b0.bindPopup(popup_304514dc109846548cf373712012f7b0)
+        ;
+
+        
+    
+    
+            var marker_a616b66f09b8461d82be2bf1311d7a13 = L.marker(
+                [28.045833000000002, 30.828611],
+                {}
+            ).addTo(map_8ce48ac6bc3f408ab7f3140f2b4077a7);
+        
+    
+            var icon_4c24b0ed8b394229afc055b384856026 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "eye-open", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_a616b66f09b8461d82be2bf1311d7a13.setIcon(icon_4c24b0ed8b394229afc055b384856026);
+        
+    
+        var popup_47af575efa6948c3b60913424904d871 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_56d17de8cc344f95b82cadb1961cf17f = $(`<div id="html_56d17de8cc344f95b82cadb1961cf17f" style="width: 100.0%; height: 100.0%;">Pyramid of Zawyet el-Maiyitin</div>`)[0];
+            popup_47af575efa6948c3b60913424904d871.setContent(html_56d17de8cc344f95b82cadb1961cf17f);
+        
+
+        marker_a616b66f09b8461d82be2bf1311d7a13.bindPopup(popup_47af575efa6948c3b60913424904d871)
+        ;
+
+        
+    
+    
+            var marker_69173def800043c680838c3f4ff1cf0c = L.marker(
+                [29.382589000000003, 31.053581],
+                {}
+            ).addTo(map_8ce48ac6bc3f408ab7f3140f2b4077a7);
+        
+    
+            var icon_a6d38824c7474045a3af79a6fbe6e837 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "eye-close", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_69173def800043c680838c3f4ff1cf0c.setIcon(icon_a6d38824c7474045a3af79a6fbe6e837);
+        
+    
+        var popup_788ad3b7d4ec456f9ab9f9c06582470c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6a658a20217e4f9192a73fc639a2b30e = $(`<div id="html_6a658a20217e4f9192a73fc639a2b30e" style="width: 100.0%; height: 100.0%;">Pyramid of Seila</div>`)[0];
+            popup_788ad3b7d4ec456f9ab9f9c06582470c.setContent(html_6a658a20217e4f9192a73fc639a2b30e);
+        
+
+        marker_69173def800043c680838c3f4ff1cf0c.bindPopup(popup_788ad3b7d4ec456f9ab9f9c06582470c)
+        ;
+
+        
+    
+    
+            var marker_c154611e5a304822bebf7c3446876e31 = L.marker(
+                [29.388056, 31.156944],
+                {}
+            ).addTo(map_8ce48ac6bc3f408ab7f3140f2b4077a7);
+        
+    
+            var icon_74efe51616874816bdbf37567296e47d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "eye-close", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_c154611e5a304822bebf7c3446876e31.setIcon(icon_74efe51616874816bdbf37567296e47d);
+        
+    
+        var popup_285be826a183458b81530010d1e0deb0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_dfc5bd3f401141548121047630c10eaa = $(`<div id="html_dfc5bd3f401141548121047630c10eaa" style="width: 100.0%; height: 100.0%;">Pyramid of Meidum</div>`)[0];
+            popup_285be826a183458b81530010d1e0deb0.setContent(html_dfc5bd3f401141548121047630c10eaa);
+        
+
+        marker_c154611e5a304822bebf7c3446876e31.bindPopup(popup_285be826a183458b81530010d1e0deb0)
+        ;
+
+        
+    
+    
+            var marker_69b6b62d8c1844448b47ee4b12e68856 = L.marker(
+                [29.790278000000004, 31.209166999999997],
+                {}
+            ).addTo(map_8ce48ac6bc3f408ab7f3140f2b4077a7);
+        
+    
+            var icon_3ab24b0ee53a4268a048d531ba542642 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "eye-close", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_69b6b62d8c1844448b47ee4b12e68856.setIcon(icon_3ab24b0ee53a4268a048d531ba542642);
+        
+    
+        var popup_9ded11cd441841899e7ef684612a005b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d4f055f3d1e9480a9f65ec1702edd3a1 = $(`<div id="html_d4f055f3d1e9480a9f65ec1702edd3a1" style="width: 100.0%; height: 100.0%;">Bent Pyramid</div>`)[0];
+            popup_9ded11cd441841899e7ef684612a005b.setContent(html_d4f055f3d1e9480a9f65ec1702edd3a1);
+        
+
+        marker_69b6b62d8c1844448b47ee4b12e68856.bindPopup(popup_9ded11cd441841899e7ef684612a005b)
+        ;
+
+        
+    
+    
+            var marker_5159446b5c304159b1e3eb80ad917a27 = L.marker(
+                [29.808333, 31.205833000000002],
+                {}
+            ).addTo(map_8ce48ac6bc3f408ab7f3140f2b4077a7);
+        
+    
+            var icon_f55009c81a184a8a9844e09938590a8e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "eye-close", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_5159446b5c304159b1e3eb80ad917a27.setIcon(icon_f55009c81a184a8a9844e09938590a8e);
+        
+    
+        var popup_844db445053b42fd98629c86b2f85929 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8b01f0f5cb1045efa19d264ef6d11a5e = $(`<div id="html_8b01f0f5cb1045efa19d264ef6d11a5e" style="width: 100.0%; height: 100.0%;">Red Pyramid (North Pyramid)</div>`)[0];
+            popup_844db445053b42fd98629c86b2f85929.setContent(html_8b01f0f5cb1045efa19d264ef6d11a5e);
+        
+
+        marker_5159446b5c304159b1e3eb80ad917a27.bindPopup(popup_844db445053b42fd98629c86b2f85929)
+        ;
+
+        
+    
+    
+            var marker_98d8eb74c4aa43749d9a10caba168e2e = L.marker(
+                [29.978835999999998, 31.136260999999998],
+                {}
+            ).addTo(map_8ce48ac6bc3f408ab7f3140f2b4077a7);
+        
+    
+            var icon_c8be3d49ba7b4dc9808034ca31d3e6c8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "eye-close", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_98d8eb74c4aa43749d9a10caba168e2e.setIcon(icon_c8be3d49ba7b4dc9808034ca31d3e6c8);
+        
+    
+        var popup_e03a894efebc42e1b9557fc342aa49d9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_da46a86a0e1f43cd8103c234f4c35ba6 = $(`<div id="html_da46a86a0e1f43cd8103c234f4c35ba6" style="width: 100.0%; height: 100.0%;">Pyramid G1-a</div>`)[0];
+            popup_e03a894efebc42e1b9557fc342aa49d9.setContent(html_da46a86a0e1f43cd8103c234f4c35ba6);
+        
+
+        marker_98d8eb74c4aa43749d9a10caba168e2e.bindPopup(popup_e03a894efebc42e1b9557fc342aa49d9)
+        ;
+
+        
+    
+    
+            var marker_3ba4f530a1874157909dd6f9164ca700 = L.marker(
+                [29.978333000000003, 31.136111],
+                {}
+            ).addTo(map_8ce48ac6bc3f408ab7f3140f2b4077a7);
+        
+    
+            var icon_914beabd615c4aefa950f1dd3b9ebd48 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "eye-close", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_3ba4f530a1874157909dd6f9164ca700.setIcon(icon_914beabd615c4aefa950f1dd3b9ebd48);
+        
+    
+        var popup_5c3344e808ab485e86b646f861f0b4b2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_eb0df6a7f92549fe8d556912905cb2da = $(`<div id="html_eb0df6a7f92549fe8d556912905cb2da" style="width: 100.0%; height: 100.0%;">Pyramid G1-b</div>`)[0];
+            popup_5c3344e808ab485e86b646f861f0b4b2.setContent(html_eb0df6a7f92549fe8d556912905cb2da);
+        
+
+        marker_3ba4f530a1874157909dd6f9164ca700.bindPopup(popup_5c3344e808ab485e86b646f861f0b4b2)
+        ;
+
+        
+    
+    
+            var marker_f246d08925ef42c8958b169bfbbb66b7 = L.marker(
+                [29.977778000000004, 31.136389],
+                {}
+            ).addTo(map_8ce48ac6bc3f408ab7f3140f2b4077a7);
+        
+    
+            var icon_136f08754e004db4a08b2cf220bbbee6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "eye-close", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_f246d08925ef42c8958b169bfbbb66b7.setIcon(icon_136f08754e004db4a08b2cf220bbbee6);
+        
+    
+        var popup_4a59b6e301e6432c933d1eb42f53c511 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_112838bdf7e24d6d94eba7bab0d4205d = $(`<div id="html_112838bdf7e24d6d94eba7bab0d4205d" style="width: 100.0%; height: 100.0%;">Pyramid G1-c</div>`)[0];
+            popup_4a59b6e301e6432c933d1eb42f53c511.setContent(html_112838bdf7e24d6d94eba7bab0d4205d);
+        
+
+        marker_f246d08925ef42c8958b169bfbbb66b7.bindPopup(popup_4a59b6e301e6432c933d1eb42f53c511)
+        ;
+
+        
+    
+    
+            var marker_aa34c5a0f5e74b6da17bc08e4d1a26c2 = L.marker(
+                [29.97785, 31.136256],
+                {}
+            ).addTo(map_8ce48ac6bc3f408ab7f3140f2b4077a7);
+        
+    
+            var icon_93e03bfac0bf43b1a85eead0b2aebd59 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "eye-close", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_aa34c5a0f5e74b6da17bc08e4d1a26c2.setIcon(icon_93e03bfac0bf43b1a85eead0b2aebd59);
+        
+    
+        var popup_fff9aace0a0b40348ab7d18dbdfe37ea = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1202bcf4c62d468396567bf1db01fbce = $(`<div id="html_1202bcf4c62d468396567bf1db01fbce" style="width: 100.0%; height: 100.0%;">Pyramid G1-d</div>`)[0];
+            popup_fff9aace0a0b40348ab7d18dbdfe37ea.setContent(html_1202bcf4c62d468396567bf1db01fbce);
+        
+
+        marker_aa34c5a0f5e74b6da17bc08e4d1a26c2.bindPopup(popup_fff9aace0a0b40348ab7d18dbdfe37ea)
+        ;
+
+        
+    
+    
+            var marker_1be22298cfb54b11a08dc8f56408a945 = L.marker(
+                [29.979166999999997, 31.134166999999998],
+                {}
+            ).addTo(map_8ce48ac6bc3f408ab7f3140f2b4077a7);
+        
+    
+            var icon_eefdf926968d4463a47c8b5e9cb4fd5e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "eye-close", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_1be22298cfb54b11a08dc8f56408a945.setIcon(icon_eefdf926968d4463a47c8b5e9cb4fd5e);
+        
+    
+        var popup_9da419f0a35a4c28b5587c4081c5132c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_829368a136ca4f3cbae0bd0cd4062f09 = $(`<div id="html_829368a136ca4f3cbae0bd0cd4062f09" style="width: 100.0%; height: 100.0%;">The Great Pyramid of Giza</div>`)[0];
+            popup_9da419f0a35a4c28b5587c4081c5132c.setContent(html_829368a136ca4f3cbae0bd0cd4062f09);
+        
+
+        marker_1be22298cfb54b11a08dc8f56408a945.bindPopup(popup_9da419f0a35a4c28b5587c4081c5132c)
+        ;
+
+        
+    
+    
+            var marker_3f5bd81e01a6468c905135008e020967 = L.marker(
+                [30.032221999999997, 31.074721999999998],
+                {}
+            ).addTo(map_8ce48ac6bc3f408ab7f3140f2b4077a7);
+        
+    
+            var icon_c64b7654009b4ae8acddd96ce64b4337 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "eye-close", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_3f5bd81e01a6468c905135008e020967.setIcon(icon_c64b7654009b4ae8acddd96ce64b4337);
+        
+    
+        var popup_6bb86ce67dd34d479d6352266d720dc9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fc170e6f87f44522b516e8cba8ad8953 = $(`<div id="html_fc170e6f87f44522b516e8cba8ad8953" style="width: 100.0%; height: 100.0%;">Pyramid of Djedefre</div>`)[0];
+            popup_6bb86ce67dd34d479d6352266d720dc9.setContent(html_fc170e6f87f44522b516e8cba8ad8953);
+        
+
+        marker_3f5bd81e01a6468c905135008e020967.bindPopup(popup_6bb86ce67dd34d479d6352266d720dc9)
+        ;
+
+        
+    
+    
+            var marker_162453a4681a4368836a863da140e84e = L.marker(
+                [29.940122, 31.151556],
+                {}
+            ).addTo(map_8ce48ac6bc3f408ab7f3140f2b4077a7);
+        
+    
+            var icon_1b5be939f2964dc590fcda150625367b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "eye-open", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_162453a4681a4368836a863da140e84e.setIcon(icon_1b5be939f2964dc590fcda150625367b);
+        
+    
+        var popup_0f3c7e5699264c60a85056a52847e491 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bbe81589d8544e189c76e6c3a98c2bed = $(`<div id="html_bbe81589d8544e189c76e6c3a98c2bed" style="width: 100.0%; height: 100.0%;">Unfinished Northern Pyramid of Zawyet el'Aryan</div>`)[0];
+            popup_0f3c7e5699264c60a85056a52847e491.setContent(html_bbe81589d8544e189c76e6c3a98c2bed);
+        
+
+        marker_162453a4681a4368836a863da140e84e.bindPopup(popup_0f3c7e5699264c60a85056a52847e491)
+        ;
+
+        
+    
+    
+            var marker_d8e9f7366b434f83a36c22f32194cbd9 = L.marker(
+                [29.975946999999998, 31.130698],
+                {}
+            ).addTo(map_8ce48ac6bc3f408ab7f3140f2b4077a7);
+        
+    
+            var icon_e696cd23877241b384f11f9ab65e6b19 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "eye-close", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_d8e9f7366b434f83a36c22f32194cbd9.setIcon(icon_e696cd23877241b384f11f9ab65e6b19);
+        
+    
+        var popup_192e4538e9564df8bb50a3b140831785 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9a4300d35809498a9e60f30211bb99a7 = $(`<div id="html_9a4300d35809498a9e60f30211bb99a7" style="width: 100.0%; height: 100.0%;">Pyramid of Khafre</div>`)[0];
+            popup_192e4538e9564df8bb50a3b140831785.setContent(html_9a4300d35809498a9e60f30211bb99a7);
+        
+
+        marker_d8e9f7366b434f83a36c22f32194cbd9.bindPopup(popup_192e4538e9564df8bb50a3b140831785)
+        ;
+
+        
+    
+    
+            var marker_eafddd44d91d4e8ead56f21616cd40bb = L.marker(
+                [29.972378000000003, 31.128327000000002],
+                {}
+            ).addTo(map_8ce48ac6bc3f408ab7f3140f2b4077a7);
+        
+    
+            var icon_62c4968a52824d2487ab972b640db43b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "eye-close", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_eafddd44d91d4e8ead56f21616cd40bb.setIcon(icon_62c4968a52824d2487ab972b640db43b);
+        
+    
+        var popup_6aa43f220b244f6ea2ea047556a24a67 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d25d8e1a8d2a47228430833e16da6562 = $(`<div id="html_d25d8e1a8d2a47228430833e16da6562" style="width: 100.0%; height: 100.0%;">Pyramid of Menkaure</div>`)[0];
+            popup_6aa43f220b244f6ea2ea047556a24a67.setContent(html_d25d8e1a8d2a47228430833e16da6562);
+        
+
+        marker_eafddd44d91d4e8ead56f21616cd40bb.bindPopup(popup_6aa43f220b244f6ea2ea047556a24a67)
+        ;
+
+        
+    
+    
+            var marker_11448887ab3f4bd58a7c972583b7ad00 = L.marker(
+                [29.971591999999998, 31.127274],
+                {}
+            ).addTo(map_8ce48ac6bc3f408ab7f3140f2b4077a7);
+        
+    
+            var icon_d2673b2e109a4aa498b433dd19d81285 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "eye-close", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_11448887ab3f4bd58a7c972583b7ad00.setIcon(icon_d2673b2e109a4aa498b433dd19d81285);
+        
+    
+        var popup_2727b748b2a24877ae3b56ace99b93a8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9a6f6e55831342e1a4929765b88d8e20 = $(`<div id="html_9a6f6e55831342e1a4929765b88d8e20" style="width: 100.0%; height: 100.0%;">Pyramid G-IIIc (western)</div>`)[0];
+            popup_2727b748b2a24877ae3b56ace99b93a8.setContent(html_9a6f6e55831342e1a4929765b88d8e20);
+        
+
+        marker_11448887ab3f4bd58a7c972583b7ad00.bindPopup(popup_2727b748b2a24877ae3b56ace99b93a8)
+        ;
+
+        
+    
+    
+            var marker_94ee0693eaa44c46b94267351dbdcf98 = L.marker(
+                [29.971591999999998, 31.127783],
+                {}
+            ).addTo(map_8ce48ac6bc3f408ab7f3140f2b4077a7);
+        
+    
+            var icon_7501dc796a2b4e3d9041d75d8fd59040 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "eye-close", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_94ee0693eaa44c46b94267351dbdcf98.setIcon(icon_7501dc796a2b4e3d9041d75d8fd59040);
+        
+    
+        var popup_5e750389c3834003849b5dc2962c044b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_19d9e6e2b0424d44a35832b23c1aad32 = $(`<div id="html_19d9e6e2b0424d44a35832b23c1aad32" style="width: 100.0%; height: 100.0%;">Pyramid G-IIIb (middle)</div>`)[0];
+            popup_5e750389c3834003849b5dc2962c044b.setContent(html_19d9e6e2b0424d44a35832b23c1aad32);
+        
+
+        marker_94ee0693eaa44c46b94267351dbdcf98.bindPopup(popup_5e750389c3834003849b5dc2962c044b)
+        ;
+
+        
+    
+    
+            var marker_1bfe6f57d1054f9f8a11fe721806e923 = L.marker(
+                [29.971591999999998, 31.128293],
+                {}
+            ).addTo(map_8ce48ac6bc3f408ab7f3140f2b4077a7);
+        
+    
+            var icon_0dfec05734da42c999040224635a84a6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "eye-close", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_1bfe6f57d1054f9f8a11fe721806e923.setIcon(icon_0dfec05734da42c999040224635a84a6);
+        
+    
+        var popup_a4d4f5e9312444439b53c2f04b4234fd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cd59069478b74e22a365595561934616 = $(`<div id="html_cd59069478b74e22a365595561934616" style="width: 100.0%; height: 100.0%;">Pyramid G-IIIa (eastern)</div>`)[0];
+            popup_a4d4f5e9312444439b53c2f04b4234fd.setContent(html_cd59069478b74e22a365595561934616);
+        
+
+        marker_1bfe6f57d1054f9f8a11fe721806e923.bindPopup(popup_a4d4f5e9312444439b53c2f04b4234fd)
+        ;
+
+        
+    
+    
+            var marker_340ee54a03014d86a404e29b97449749 = L.marker(
+                [29.838889, 31.215],
+                {}
+            ).addTo(map_8ce48ac6bc3f408ab7f3140f2b4077a7);
+        
+    
+            var icon_65878829d1b04db6a70e6bf5ab0a0530 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "eye-close", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_340ee54a03014d86a404e29b97449749.setIcon(icon_65878829d1b04db6a70e6bf5ab0a0530);
+        
+    
+        var popup_67ec054963144034957ec1f3d2bcdc57 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ba476fdcff244433b2a5bb744c5209b5 = $(`<div id="html_ba476fdcff244433b2a5bb744c5209b5" style="width: 100.0%; height: 100.0%;">Mastabat al-Fir'aun</div>`)[0];
+            popup_67ec054963144034957ec1f3d2bcdc57.setContent(html_ba476fdcff244433b2a5bb744c5209b5);
+        
+
+        marker_340ee54a03014d86a404e29b97449749.bindPopup(popup_67ec054963144034957ec1f3d2bcdc57)
+        ;
+
+        
+    
+    
+            var marker_947d1d188e2e4aa796a8418cb94d26e4 = L.marker(
+                [29.973306, 31.135361],
+                {}
+            ).addTo(map_8ce48ac6bc3f408ab7f3140f2b4077a7);
+        
+    
+            var icon_1af0bb3ab8844353881998a9237b2081 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "eye-close", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_947d1d188e2e4aa796a8418cb94d26e4.setIcon(icon_1af0bb3ab8844353881998a9237b2081);
+        
+    
+        var popup_f1f739c48b4140edad816996ee49e405 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5231b4b5e7274920b910f2085a50a03a = $(`<div id="html_5231b4b5e7274920b910f2085a50a03a" style="width: 100.0%; height: 100.0%;">Step tomb of Khentkaus I</div>`)[0];
+            popup_f1f739c48b4140edad816996ee49e405.setContent(html_5231b4b5e7274920b910f2085a50a03a);
+        
+
+        marker_947d1d188e2e4aa796a8418cb94d26e4.bindPopup(popup_f1f739c48b4140edad816996ee49e405)
+        ;
+
+        
+    
+    
+            var marker_e393130ae7a64735b2cb1a2be292b375 = L.marker(
+                [29.810833000000002, 31.212221999999997],
+                {}
+            ).addTo(map_8ce48ac6bc3f408ab7f3140f2b4077a7);
+        
+    
+            var icon_663f78c13bbb4937940dd2edbb4f51a7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "eye-open", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_e393130ae7a64735b2cb1a2be292b375.setIcon(icon_663f78c13bbb4937940dd2edbb4f51a7);
+        
+    
+        var popup_720ec05b17244e4592fe573b4f475ed3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ca919d0942244dea8d9adebf2aa22824 = $(`<div id="html_ca919d0942244dea8d9adebf2aa22824" style="width: 100.0%; height: 100.0%;">Pyramid Lepsius L</div>`)[0];
+            popup_720ec05b17244e4592fe573b4f475ed3.setContent(html_ca919d0942244dea8d9adebf2aa22824);
+        
+
+        marker_e393130ae7a64735b2cb1a2be292b375.bindPopup(popup_720ec05b17244e4592fe573b4f475ed3)
+        ;
+
+        
+    
+    
+            var marker_fc076d7cd4354fa9b397c007b893d261 = L.marker(
+                [29.873611, 31.218889],
+                {}
+            ).addTo(map_8ce48ac6bc3f408ab7f3140f2b4077a7);
+        
+    
+            var icon_c00a0dd3d0494883a06b505cc3b4c9e0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "eye-close", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_fc076d7cd4354fa9b397c007b893d261.setIcon(icon_c00a0dd3d0494883a06b505cc3b4c9e0);
+        
+    
+        var popup_7f14e4551bf84a96aff10734ec2c8f24 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_18c90cb0a6464905acf2dd4062f2e87c = $(`<div id="html_18c90cb0a6464905acf2dd4062f2e87c" style="width: 100.0%; height: 100.0%;">Pyramid of Userkaf</div>`)[0];
+            popup_7f14e4551bf84a96aff10734ec2c8f24.setContent(html_18c90cb0a6464905acf2dd4062f2e87c);
+        
+
+        marker_fc076d7cd4354fa9b397c007b893d261.bindPopup(popup_7f14e4551bf84a96aff10734ec2c8f24)
+        ;
+
+        
+    
+    
+            var marker_62c2488cc2394db1925227d94fccd6e2 = L.marker(
+                [29.87275, 31.2186],
+                {}
+            ).addTo(map_8ce48ac6bc3f408ab7f3140f2b4077a7);
+        
+    
+            var icon_0cd650e83bdf4f1db6a5c0b6d66fb822 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "eye-close", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_62c2488cc2394db1925227d94fccd6e2.setIcon(icon_0cd650e83bdf4f1db6a5c0b6d66fb822);
+        
+    
+        var popup_3ce69d8b3fd04f7babb7eca6e87adb05 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d3ccac09db8d44a49c44ff1974772330 = $(`<div id="html_d3ccac09db8d44a49c44ff1974772330" style="width: 100.0%; height: 100.0%;">Pyramid of Neferhetepes (wife of Userkaf)</div>`)[0];
+            popup_3ce69d8b3fd04f7babb7eca6e87adb05.setContent(html_d3ccac09db8d44a49c44ff1974772330);
+        
+
+        marker_62c2488cc2394db1925227d94fccd6e2.bindPopup(popup_3ce69d8b3fd04f7babb7eca6e87adb05)
+        ;
+
+        
+    
+    
+            var marker_69ce7505a5a14e22bda810110df0886c = L.marker(
+                [29.897778000000002, 31.203333],
+                {}
+            ).addTo(map_8ce48ac6bc3f408ab7f3140f2b4077a7);
+        
+    
+            var icon_aec1b7222462408d89dcdb2276ad0354 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "eye-close", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_69ce7505a5a14e22bda810110df0886c.setIcon(icon_aec1b7222462408d89dcdb2276ad0354);
+        
+    
+        var popup_8b3b18abdb7c4d4899f867a05ebca141 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_79cc0f65ac054c2093534bd091a9c36c = $(`<div id="html_79cc0f65ac054c2093534bd091a9c36c" style="width: 100.0%; height: 100.0%;">Pyramid of Sahure</div>`)[0];
+            popup_8b3b18abdb7c4d4899f867a05ebca141.setContent(html_79cc0f65ac054c2093534bd091a9c36c);
+        
+
+        marker_69ce7505a5a14e22bda810110df0886c.bindPopup(popup_8b3b18abdb7c4d4899f867a05ebca141)
+        ;
+
+        
+    
+    
+            var marker_8d25e64a12684b8e906cf97be7ed2bae = L.marker(
+                [29.895, 31.2025],
+                {}
+            ).addTo(map_8ce48ac6bc3f408ab7f3140f2b4077a7);
+        
+    
+            var icon_e9bb9a0e66f64465b3642d796387f8b7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "eye-close", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_8d25e64a12684b8e906cf97be7ed2bae.setIcon(icon_e9bb9a0e66f64465b3642d796387f8b7);
+        
+    
+        var popup_5faf1f553bf54d15b5c7445282d5a065 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d2803d67c86f46fa9a195fdf58f47407 = $(`<div id="html_d2803d67c86f46fa9a195fdf58f47407" style="width: 100.0%; height: 100.0%;">Pyramid of Neferirkare</div>`)[0];
+            popup_5faf1f553bf54d15b5c7445282d5a065.setContent(html_d2803d67c86f46fa9a195fdf58f47407);
+        
+
+        marker_8d25e64a12684b8e906cf97be7ed2bae.bindPopup(popup_5faf1f553bf54d15b5c7445282d5a065)
+        ;
+
+        
+    
+    
+            var marker_78c660822be44daa91654079e59fbfba = L.marker(
+                [29.893889, 31.201666999999997],
+                {}
+            ).addTo(map_8ce48ac6bc3f408ab7f3140f2b4077a7);
+        
+    
+            var icon_46703af35c5849818237715541765052 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "eye-close", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_78c660822be44daa91654079e59fbfba.setIcon(icon_46703af35c5849818237715541765052);
+        
+    
+        var popup_4078aa0f616a4078ae9875d12108f863 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f8c3f7e7e7944e7cb50670dcf0d5eb93 = $(`<div id="html_f8c3f7e7e7944e7cb50670dcf0d5eb93" style="width: 100.0%; height: 100.0%;">Pyramid of Neferefre</div>`)[0];
+            popup_4078aa0f616a4078ae9875d12108f863.setContent(html_f8c3f7e7e7944e7cb50670dcf0d5eb93);
+        
+
+        marker_78c660822be44daa91654079e59fbfba.bindPopup(popup_4078aa0f616a4078ae9875d12108f863)
+        ;
+
+        
+    
+    
+            var marker_ce80c2533af34495bcc00830514f8d87 = L.marker(
+                [29.894143, 31.202523],
+                {}
+            ).addTo(map_8ce48ac6bc3f408ab7f3140f2b4077a7);
+        
+    
+            var icon_006af116c9a44d86b8c510613912a2a3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "eye-close", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_ce80c2533af34495bcc00830514f8d87.setIcon(icon_006af116c9a44d86b8c510613912a2a3);
+        
+    
+        var popup_0dfa8194008548c3a5b6051401f1acb0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_da85e26db5514f14a1789a767c9d02c4 = $(`<div id="html_da85e26db5514f14a1789a767c9d02c4" style="width: 100.0%; height: 100.0%;">Pyramid of Queen Khentkawes II</div>`)[0];
+            popup_0dfa8194008548c3a5b6051401f1acb0.setContent(html_da85e26db5514f14a1789a767c9d02c4);
+        
+
+        marker_ce80c2533af34495bcc00830514f8d87.bindPopup(popup_0dfa8194008548c3a5b6051401f1acb0)
+        ;
+
+        
+    
+    
+            var marker_e7d4457a1c8d4d6bb8bbc7d1d92cc95a = L.marker(
+                [29.898664, 31.201633],
+                {}
+            ).addTo(map_8ce48ac6bc3f408ab7f3140f2b4077a7);
+        
+    
+            var icon_854b9dc6cfe24e068ac967e0ea344240 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "eye-open", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_e7d4457a1c8d4d6bb8bbc7d1d92cc95a.setIcon(icon_854b9dc6cfe24e068ac967e0ea344240);
+        
+    
+        var popup_760f837173da4447a33f234fcb53713b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1e6dacb653b0400cae1fe28af1c1a815 = $(`<div id="html_1e6dacb653b0400cae1fe28af1c1a815" style="width: 100.0%; height: 100.0%;">Unfinished pyramid of North Abusir</div>`)[0];
+            popup_760f837173da4447a33f234fcb53713b.setContent(html_1e6dacb653b0400cae1fe28af1c1a815);
+        
+
+        marker_e7d4457a1c8d4d6bb8bbc7d1d92cc95a.bindPopup(popup_760f837173da4447a33f234fcb53713b)
+        ;
+
+        
+    
+    
+            var marker_ac27b3f718f342ae835135cf41bf33e0 = L.marker(
+                [29.895667, 31.203556],
+                {}
+            ).addTo(map_8ce48ac6bc3f408ab7f3140f2b4077a7);
+        
+    
+            var icon_91534f5682bb417b8691797e43193a70 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "eye-close", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_ac27b3f718f342ae835135cf41bf33e0.setIcon(icon_91534f5682bb417b8691797e43193a70);
+        
+    
+        var popup_766dc527a22b43a2a0a02593f0d8e443 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a17f36d6b76241f0b97bf6476d1e8cce = $(`<div id="html_a17f36d6b76241f0b97bf6476d1e8cce" style="width: 100.0%; height: 100.0%;">Pyramid of Nyuserre</div>`)[0];
+            popup_766dc527a22b43a2a0a02593f0d8e443.setContent(html_a17f36d6b76241f0b97bf6476d1e8cce);
+        
+
+        marker_ac27b3f718f342ae835135cf41bf33e0.bindPopup(popup_766dc527a22b43a2a0a02593f0d8e443)
+        ;
+
+        
+    
+    
+            var marker_374cabf49b4b4512878125173c41ef72 = L.marker(
+                [29.875278, 31.223611],
+                {}
+            ).addTo(map_8ce48ac6bc3f408ab7f3140f2b4077a7);
+        
+    
+            var icon_fe67ec31be1243b09e9b0935ec84f3bc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "eye-close", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_374cabf49b4b4512878125173c41ef72.setIcon(icon_fe67ec31be1243b09e9b0935ec84f3bc);
+        
+    
+        var popup_786263e8c77b448fbdd4314e6bf90ec1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_dbbbc9f23d3b462f8ed1b0a3a622d632 = $(`<div id="html_dbbbc9f23d3b462f8ed1b0a3a622d632" style="width: 100.0%; height: 100.0%;">Headless Pyramid</div>`)[0];
+            popup_786263e8c77b448fbdd4314e6bf90ec1.setContent(html_dbbbc9f23d3b462f8ed1b0a3a622d632);
+        
+
+        marker_374cabf49b4b4512878125173c41ef72.bindPopup(popup_786263e8c77b448fbdd4314e6bf90ec1)
+        ;
+
+        
+    
+    
+            var marker_c39b9d3ce95843609fe3cad3fdc3edbd = L.marker(
+                [29.851111, 31.220833000000002],
+                {}
+            ).addTo(map_8ce48ac6bc3f408ab7f3140f2b4077a7);
+        
+    
+            var icon_9fa8fd42cd5149a8989cd98c2e2ae21d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "eye-close", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_c39b9d3ce95843609fe3cad3fdc3edbd.setIcon(icon_9fa8fd42cd5149a8989cd98c2e2ae21d);
+        
+    
+        var popup_303406489a704bf5a75c0521fd5ceeb8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_36ba1afbb7c94f14b66ed2b87c38f55b = $(`<div id="html_36ba1afbb7c94f14b66ed2b87c38f55b" style="width: 100.0%; height: 100.0%;">Pyramid of Djedkare-Isesi</div>`)[0];
+            popup_303406489a704bf5a75c0521fd5ceeb8.setContent(html_36ba1afbb7c94f14b66ed2b87c38f55b);
+        
+
+        marker_c39b9d3ce95843609fe3cad3fdc3edbd.bindPopup(popup_303406489a704bf5a75c0521fd5ceeb8)
+        ;
+
+        
+    
+    
+            var marker_aac915fb1be943798089709cf67b171f = L.marker(
+                [29.868333000000003, 31.214722],
+                {}
+            ).addTo(map_8ce48ac6bc3f408ab7f3140f2b4077a7);
+        
+    
+            var icon_80ec0a6bc4ce4352855631c2be0e5486 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "eye-close", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_aac915fb1be943798089709cf67b171f.setIcon(icon_80ec0a6bc4ce4352855631c2be0e5486);
+        
+    
+        var popup_d6ac1e6ff01f421a8c00d0b7cbf69e5d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5dc28a9c91b24557bec3141afe0c28b0 = $(`<div id="html_5dc28a9c91b24557bec3141afe0c28b0" style="width: 100.0%; height: 100.0%;">Pyramid of Unas</div>`)[0];
+            popup_d6ac1e6ff01f421a8c00d0b7cbf69e5d.setContent(html_5dc28a9c91b24557bec3141afe0c28b0);
+        
+
+        marker_aac915fb1be943798089709cf67b171f.bindPopup(popup_d6ac1e6ff01f421a8c00d0b7cbf69e5d)
+        ;
+
+        
+    
+    
+            var marker_2ba142c0be614b5fa2568d628377129d = L.marker(
+                [29.875278, 31.221667],
+                {}
+            ).addTo(map_8ce48ac6bc3f408ab7f3140f2b4077a7);
+        
+    
+            var icon_90e09ba0e4e4428790e279cc32de59ee = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "eye-close", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_2ba142c0be614b5fa2568d628377129d.setIcon(icon_90e09ba0e4e4428790e279cc32de59ee);
+        
+    
+        var popup_1f5da6f1a42640249cba9bf4e17c40a0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3da55d5f33a249e690495b2229010e77 = $(`<div id="html_3da55d5f33a249e690495b2229010e77" style="width: 100.0%; height: 100.0%;">Pyramid of Teti</div>`)[0];
+            popup_1f5da6f1a42640249cba9bf4e17c40a0.setContent(html_3da55d5f33a249e690495b2229010e77);
+        
+
+        marker_2ba142c0be614b5fa2568d628377129d.bindPopup(popup_1f5da6f1a42640249cba9bf4e17c40a0)
+        ;
+
+        
+    
+    
+            var marker_273be87fb6b842cb828a3aec3d3cdbba = L.marker(
+                [29.854509999999998, 31.21909],
+                {}
+            ).addTo(map_8ce48ac6bc3f408ab7f3140f2b4077a7);
+        
+    
+            var icon_dcf5beb957814acabe82e517d94b4062 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "eye-close", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_273be87fb6b842cb828a3aec3d3cdbba.setIcon(icon_dcf5beb957814acabe82e517d94b4062);
+        
+    
+        var popup_ae0cf44eefa5470d9e7d0d10a99788e7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_534274e41c4046a6b7ef929ea9d38531 = $(`<div id="html_534274e41c4046a6b7ef929ea9d38531" style="width: 100.0%; height: 100.0%;">Pyramid of Pepi I</div>`)[0];
+            popup_ae0cf44eefa5470d9e7d0d10a99788e7.setContent(html_534274e41c4046a6b7ef929ea9d38531);
+        
+
+        marker_273be87fb6b842cb828a3aec3d3cdbba.bindPopup(popup_ae0cf44eefa5470d9e7d0d10a99788e7)
+        ;
+
+        
+    
+    
+            var marker_54a02e59de66419190ca654d67c8b5e0 = L.marker(
+                [29.850556, 31.215],
+                {}
+            ).addTo(map_8ce48ac6bc3f408ab7f3140f2b4077a7);
+        
+    
+            var icon_c074850931f44092882177af21abd4a2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "eye-close", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_54a02e59de66419190ca654d67c8b5e0.setIcon(icon_c074850931f44092882177af21abd4a2);
+        
+    
+        var popup_cb203c1d5eaf4c8ca76ec8d3d9d656df = L.popup({"maxWidth": "100%"});
+
+        
+            var html_24a7a811996c4200ad85857b9cf17420 = $(`<div id="html_24a7a811996c4200ad85857b9cf17420" style="width: 100.0%; height: 100.0%;">Pyramid of Merenre</div>`)[0];
+            popup_cb203c1d5eaf4c8ca76ec8d3d9d656df.setContent(html_24a7a811996c4200ad85857b9cf17420);
+        
+
+        marker_54a02e59de66419190ca654d67c8b5e0.bindPopup(popup_cb203c1d5eaf4c8ca76ec8d3d9d656df)
+        ;
+
+        
+    
+    
+            var marker_327ef2b73c3845e79e43eb98d0e307ad = L.marker(
+                [29.8403, 31.2133],
+                {}
+            ).addTo(map_8ce48ac6bc3f408ab7f3140f2b4077a7);
+        
+    
+            var icon_cf332767a9044785972de74442033a0c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "eye-close", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_327ef2b73c3845e79e43eb98d0e307ad.setIcon(icon_cf332767a9044785972de74442033a0c);
+        
+    
+        var popup_9eb6f56ad50b4da2976f105501ff84a8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8d9e4bab79054989a5244f3e05ab319b = $(`<div id="html_8d9e4bab79054989a5244f3e05ab319b" style="width: 100.0%; height: 100.0%;">Pyramid of Pepi II</div>`)[0];
+            popup_9eb6f56ad50b4da2976f105501ff84a8.setContent(html_8d9e4bab79054989a5244f3e05ab319b);
+        
+
+        marker_327ef2b73c3845e79e43eb98d0e307ad.bindPopup(popup_9eb6f56ad50b4da2976f105501ff84a8)
+        ;
+
+        
+    
+    
+            var marker_5f1f0598ae694306a6e670edf91d032c = L.marker(
+                [29.841666999999998, 31.217778000000003],
+                {}
+            ).addTo(map_8ce48ac6bc3f408ab7f3140f2b4077a7);
+        
+    
+            var icon_eb2410eb60574e51aa8e1d49ae6f5284 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "eye-close", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_5f1f0598ae694306a6e670edf91d032c.setIcon(icon_eb2410eb60574e51aa8e1d49ae6f5284);
+        
+    
+        var popup_a339853d4d864b12bf081f2144717671 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ba39bf8b178b4d0ab287630ddc512eed = $(`<div id="html_ba39bf8b178b4d0ab287630ddc512eed" style="width: 100.0%; height: 100.0%;">Pyramid of Ibi</div>`)[0];
+            popup_a339853d4d864b12bf081f2144717671.setContent(html_ba39bf8b178b4d0ab287630ddc512eed);
+        
+
+        marker_5f1f0598ae694306a6e670edf91d032c.bindPopup(popup_a339853d4d864b12bf081f2144717671)
+        ;
+
+        
+    
+    
+            var marker_48f17f6ca8cb4187ae4c15b08f13de74 = L.marker(
+                [27.307778000000003, 30.871667],
+                {}
+            ).addTo(map_8ce48ac6bc3f408ab7f3140f2b4077a7);
+        
+    
+            var icon_0ee3b60bab7c4d7abf72b1e096ababf2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "eye-close", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_48f17f6ca8cb4187ae4c15b08f13de74.setIcon(icon_0ee3b60bab7c4d7abf72b1e096ababf2);
+        
+    
+        var popup_04c3049cd9c147b6bb387639818a9acc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ea632ed3ca6b42489e18c01482ef40f5 = $(`<div id="html_ea632ed3ca6b42489e18c01482ef40f5" style="width: 100.0%; height: 100.0%;">Pyramid of Khui</div>`)[0];
+            popup_04c3049cd9c147b6bb387639818a9acc.setContent(html_ea632ed3ca6b42489e18c01482ef40f5);
+        
+
+        marker_48f17f6ca8cb4187ae4c15b08f13de74.bindPopup(popup_04c3049cd9c147b6bb387639818a9acc)
+        ;
+
+        
+    
+    
+            var marker_4390728cf1944b449919af08fd99f225 = L.marker(
+                [29.574721999999998, 31.225],
+                {}
+            ).addTo(map_8ce48ac6bc3f408ab7f3140f2b4077a7);
+        
+    
+            var icon_2ab8b1741bdf49b7bad48a78f1161b31 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "eye-close", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_4390728cf1944b449919af08fd99f225.setIcon(icon_2ab8b1741bdf49b7bad48a78f1161b31);
+        
+    
+        var popup_2729eb9e06c54885a0a0a449ce067bb4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fd07ba311b8641e58e4c88c111ead561 = $(`<div id="html_fd07ba311b8641e58e4c88c111ead561" style="width: 100.0%; height: 100.0%;">Pyramid of Amenemhet I</div>`)[0];
+            popup_2729eb9e06c54885a0a0a449ce067bb4.setContent(html_fd07ba311b8641e58e4c88c111ead561);
+        
+
+        marker_4390728cf1944b449919af08fd99f225.bindPopup(popup_2729eb9e06c54885a0a0a449ce067bb4)
+        ;
+
+        
+    
+    
+            var marker_2c1f18d9d73947758d03839516e3e975 = L.marker(
+                [29.560009, 31.220876],
+                {}
+            ).addTo(map_8ce48ac6bc3f408ab7f3140f2b4077a7);
+        
+    
+            var icon_5b176dbd590345389eaeee61d92c2a5a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "eye-close", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_2c1f18d9d73947758d03839516e3e975.setIcon(icon_5b176dbd590345389eaeee61d92c2a5a);
+        
+    
+        var popup_1f498e14ae384e358bc7bdfd5a64b40b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bda8b9e5098e418284673447529ac18a = $(`<div id="html_bda8b9e5098e418284673447529ac18a" style="width: 100.0%; height: 100.0%;">Pyramid of Senusret I</div>`)[0];
+            popup_1f498e14ae384e358bc7bdfd5a64b40b.setContent(html_bda8b9e5098e418284673447529ac18a);
+        
+
+        marker_2c1f18d9d73947758d03839516e3e975.bindPopup(popup_1f498e14ae384e358bc7bdfd5a64b40b)
+        ;
+
+        
+    
+    
+            var marker_abc215625e0a4903b8c85457590aecc6 = L.marker(
+                [29.805563, 31.222781],
+                {}
+            ).addTo(map_8ce48ac6bc3f408ab7f3140f2b4077a7);
+        
+    
+            var icon_81e4465686504ff5a146b4695632e5f2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "eye-close", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_abc215625e0a4903b8c85457590aecc6.setIcon(icon_81e4465686504ff5a146b4695632e5f2);
+        
+    
+        var popup_0ee6a8fb7b4349a681e872d73b67736c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_becb3dcd1a7d431388e843a07889541e = $(`<div id="html_becb3dcd1a7d431388e843a07889541e" style="width: 100.0%; height: 100.0%;">White Pyramid</div>`)[0];
+            popup_0ee6a8fb7b4349a681e872d73b67736c.setContent(html_becb3dcd1a7d431388e843a07889541e);
+        
+
+        marker_abc215625e0a4903b8c85457590aecc6.bindPopup(popup_0ee6a8fb7b4349a681e872d73b67736c)
+        ;
+
+        
+    
+    
+            var marker_9b026fb352144510b897ffdf1e98abc0 = L.marker(
+                [29.233333000000002, 30.966666999999998],
+                {}
+            ).addTo(map_8ce48ac6bc3f408ab7f3140f2b4077a7);
+        
+    
+            var icon_28da7226fcb5488eb09259687d74ff18 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "eye-close", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_9b026fb352144510b897ffdf1e98abc0.setIcon(icon_28da7226fcb5488eb09259687d74ff18);
+        
+    
+        var popup_4db77fe3e48640858b4134d9e14d0a14 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e0d78d5e01be4aa2910289a8fae90cfb = $(`<div id="html_e0d78d5e01be4aa2910289a8fae90cfb" style="width: 100.0%; height: 100.0%;">Pyramid of Senusret II</div>`)[0];
+            popup_4db77fe3e48640858b4134d9e14d0a14.setContent(html_e0d78d5e01be4aa2910289a8fae90cfb);
+        
+
+        marker_9b026fb352144510b897ffdf1e98abc0.bindPopup(popup_4db77fe3e48640858b4134d9e14d0a14)
+        ;
+
+        
+    
+    
+            var marker_81e89698a28b468e9f67dcbcaf5dc115 = L.marker(
+                [29.818889000000002, 31.225556],
+                {}
+            ).addTo(map_8ce48ac6bc3f408ab7f3140f2b4077a7);
+        
+    
+            var icon_3ff6c402f271485c85ab461510d106a0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "eye-close", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_81e89698a28b468e9f67dcbcaf5dc115.setIcon(icon_3ff6c402f271485c85ab461510d106a0);
+        
+    
+        var popup_67e81543d05b4384b8ef51b0489ed15a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_16e55469e4dc4c36938aa9d56835d441 = $(`<div id="html_16e55469e4dc4c36938aa9d56835d441" style="width: 100.0%; height: 100.0%;">Pyramid of Senusret III</div>`)[0];
+            popup_67e81543d05b4384b8ef51b0489ed15a.setContent(html_16e55469e4dc4c36938aa9d56835d441);
+        
+
+        marker_81e89698a28b468e9f67dcbcaf5dc115.bindPopup(popup_67e81543d05b4384b8ef51b0489ed15a)
+        ;
+
+        
+    
+    
+            var marker_6e23f3ebdc4f4fbf87330321ad1ecf6f = L.marker(
+                [29.791666999999997, 31.223611],
+                {}
+            ).addTo(map_8ce48ac6bc3f408ab7f3140f2b4077a7);
+        
+    
+            var icon_dc6f327ee9214907ab82e568a2b15319 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "eye-close", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_6e23f3ebdc4f4fbf87330321ad1ecf6f.setIcon(icon_dc6f327ee9214907ab82e568a2b15319);
+        
+    
+        var popup_b3dc768d0fd341079128a1f23099c23e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_219b40fb7d1c460db2cdd5bde684e732 = $(`<div id="html_219b40fb7d1c460db2cdd5bde684e732" style="width: 100.0%; height: 100.0%;">Black Pyramid</div>`)[0];
+            popup_b3dc768d0fd341079128a1f23099c23e.setContent(html_219b40fb7d1c460db2cdd5bde684e732);
+        
+
+        marker_6e23f3ebdc4f4fbf87330321ad1ecf6f.bindPopup(popup_b3dc768d0fd341079128a1f23099c23e)
+        ;
+
+        
+    
+    
+            var marker_695927a28d3741159a5afc3d51a0709c = L.marker(
+                [29.274240000000002, 30.898972999999998],
+                {}
+            ).addTo(map_8ce48ac6bc3f408ab7f3140f2b4077a7);
+        
+    
+            var icon_907c74b3678d4ca5b5bf18c245d3197f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "eye-close", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_695927a28d3741159a5afc3d51a0709c.setIcon(icon_907c74b3678d4ca5b5bf18c245d3197f);
+        
+    
+        var popup_624494344bab415c82f33b5d1d78d723 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9eaf63a339844861a1cb7702a29d6384 = $(`<div id="html_9eaf63a339844861a1cb7702a29d6384" style="width: 100.0%; height: 100.0%;">Pyramid of Hawara</div>`)[0];
+            popup_624494344bab415c82f33b5d1d78d723.setContent(html_9eaf63a339844861a1cb7702a29d6384);
+        
+
+        marker_695927a28d3741159a5afc3d51a0709c.bindPopup(popup_624494344bab415c82f33b5d1d78d723)
+        ;
+
+        
+    
+    
+            var marker_e73f86ae2c9d4735beb48fee087888f3 = L.marker(
+                [29.761667, 31.220833000000002],
+                {}
+            ).addTo(map_8ce48ac6bc3f408ab7f3140f2b4077a7);
+        
+    
+            var icon_123b5f8c313644588d5b391ae332a5c9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "eye-open", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_e73f86ae2c9d4735beb48fee087888f3.setIcon(icon_123b5f8c313644588d5b391ae332a5c9);
+        
+    
+        var popup_5a1032fbbb9446d7bb8672173bf32596 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1189e58a30194518bd04bc7f1239ecab = $(`<div id="html_1189e58a30194518bd04bc7f1239ecab" style="width: 100.0%; height: 100.0%;">Southern Mazghuna pyramid</div>`)[0];
+            popup_5a1032fbbb9446d7bb8672173bf32596.setContent(html_1189e58a30194518bd04bc7f1239ecab);
+        
+
+        marker_e73f86ae2c9d4735beb48fee087888f3.bindPopup(popup_5a1032fbbb9446d7bb8672173bf32596)
+        ;
+
+        
+    
+    
+            var marker_61b0a7e259414e76b571b790e5a74b15 = L.marker(
+                [29.7675, 31.220833000000002],
+                {}
+            ).addTo(map_8ce48ac6bc3f408ab7f3140f2b4077a7);
+        
+    
+            var icon_87dbc5866212423f88186c4bd6c5fc64 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "eye-open", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_61b0a7e259414e76b571b790e5a74b15.setIcon(icon_87dbc5866212423f88186c4bd6c5fc64);
+        
+    
+        var popup_25d07780e7e7466ebe3eab18290ad9f8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_583cc4d1ee6a406387a81a2e4702575a = $(`<div id="html_583cc4d1ee6a406387a81a2e4702575a" style="width: 100.0%; height: 100.0%;">Northern Mazghuna pyramid</div>`)[0];
+            popup_25d07780e7e7466ebe3eab18290ad9f8.setContent(html_583cc4d1ee6a406387a81a2e4702575a);
+        
+
+        marker_61b0a7e259414e76b571b790e5a74b15.bindPopup(popup_25d07780e7e7466ebe3eab18290ad9f8)
+        ;
+
+        
+    
+    
+            var marker_986fc1c216b441e09e646422afeeb461 = L.marker(
+                [29.781667, 31.221389000000002],
+                {}
+            ).addTo(map_8ce48ac6bc3f408ab7f3140f2b4077a7);
+        
+    
+            var icon_a2d0a645af0f4013818d91a2448c988a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "eye-close", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_986fc1c216b441e09e646422afeeb461.setIcon(icon_a2d0a645af0f4013818d91a2448c988a);
+        
+    
+        var popup_583e1950fb524f0797134f97932217a5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6a7c2220f4b142449feb6dca353ee8a0 = $(`<div id="html_6a7c2220f4b142449feb6dca353ee8a0" style="width: 100.0%; height: 100.0%;">Pyramid of Ameny Qemau</div>`)[0];
+            popup_583e1950fb524f0797134f97932217a5.setContent(html_6a7c2220f4b142449feb6dca353ee8a0);
+        
+
+        marker_986fc1c216b441e09e646422afeeb461.bindPopup(popup_583e1950fb524f0797134f97932217a5)
+        ;
+
+        
+    
+    
+            var marker_a11c2891f725445c995bccc26994bfa1 = L.marker(
+                [29.832221999999998, 31.223889],
+                {}
+            ).addTo(map_8ce48ac6bc3f408ab7f3140f2b4077a7);
+        
+    
+            var icon_63ad6973a26c450db3c5a064d2770af3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "eye-close", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_a11c2891f725445c995bccc26994bfa1.setIcon(icon_63ad6973a26c450db3c5a064d2770af3);
+        
+    
+        var popup_5f57d869809d4649ad38bcacbc8089f7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f3f956fb0b92465d92d78d6baa8876a6 = $(`<div id="html_f3f956fb0b92465d92d78d6baa8876a6" style="width: 100.0%; height: 100.0%;">Pyramid of Khendjer</div>`)[0];
+            popup_5f57d869809d4649ad38bcacbc8089f7.setContent(html_f3f956fb0b92465d92d78d6baa8876a6);
+        
+
+        marker_a11c2891f725445c995bccc26994bfa1.bindPopup(popup_5f57d869809d4649ad38bcacbc8089f7)
+        ;
+
+        
+    
+    
+            var marker_dfec938823ec4065b1ca04f5360ca2fe = L.marker(
+                [29.830556, 31.222222],
+                {}
+            ).addTo(map_8ce48ac6bc3f408ab7f3140f2b4077a7);
+        
+    
+            var icon_7a76ccbc2f6f4ab1810659fb55b59dd5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "eye-open", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_dfec938823ec4065b1ca04f5360ca2fe.setIcon(icon_7a76ccbc2f6f4ab1810659fb55b59dd5);
+        
+    
+        var popup_6876875e1dce46168b87f472575941b0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7bc08f0e76234904a8413d28c7d407c7 = $(`<div id="html_7bc08f0e76234904a8413d28c7d407c7" style="width: 100.0%; height: 100.0%;">Southern South Saqqara pyramid</div>`)[0];
+            popup_6876875e1dce46168b87f472575941b0.setContent(html_7bc08f0e76234904a8413d28c7d407c7);
+        
+
+        marker_dfec938823ec4065b1ca04f5360ca2fe.bindPopup(popup_6876875e1dce46168b87f472575941b0)
+        ;
+
+        
+    
+    
+            var marker_4b5c5d21a6bf4903a54fa743be08a71c = L.marker(
+                [26.171389, 31.925],
+                {}
+            ).addTo(map_8ce48ac6bc3f408ab7f3140f2b4077a7);
+        
+    
+            var icon_ab47591d13454965b6a4ea3e18118375 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "eye-close", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_4b5c5d21a6bf4903a54fa743be08a71c.setIcon(icon_ab47591d13454965b6a4ea3e18118375);
+        
+    
+        var popup_025e249e19a34ddd8acb342da77d5187 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1609412ae2cf4bd09d9ed8cdc820d23a = $(`<div id="html_1609412ae2cf4bd09d9ed8cdc820d23a" style="width: 100.0%; height: 100.0%;">Tomb S9</div>`)[0];
+            popup_025e249e19a34ddd8acb342da77d5187.setContent(html_1609412ae2cf4bd09d9ed8cdc820d23a);
+        
+
+        marker_4b5c5d21a6bf4903a54fa743be08a71c.bindPopup(popup_025e249e19a34ddd8acb342da77d5187)
+        ;
+
+        
+    
+    
+            var marker_c12da6644f6a4cf48b2a79196c885239 = L.marker(
+                [26.171111, 31.924166999999997],
+                {}
+            ).addTo(map_8ce48ac6bc3f408ab7f3140f2b4077a7);
+        
+    
+            var icon_19c06f351f564186b62ce0e6b5b0d08d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "eye-close", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_c12da6644f6a4cf48b2a79196c885239.setIcon(icon_19c06f351f564186b62ce0e6b5b0d08d);
+        
+    
+        var popup_8e75576ba4fa41cab689d55f108ac07c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a599d3f64572452bb4610f0480ad0467 = $(`<div id="html_a599d3f64572452bb4610f0480ad0467" style="width: 100.0%; height: 100.0%;">Tomb S10</div>`)[0];
+            popup_8e75576ba4fa41cab689d55f108ac07c.setContent(html_a599d3f64572452bb4610f0480ad0467);
+        
+
+        marker_c12da6644f6a4cf48b2a79196c885239.bindPopup(popup_8e75576ba4fa41cab689d55f108ac07c)
+        ;
+
+        
+    
+    
+            var marker_401f7ee7d30b40d9a0cdc66fd75ffaca = L.marker(
+                [26.175, 31.937778],
+                {}
+            ).addTo(map_8ce48ac6bc3f408ab7f3140f2b4077a7);
+        
+    
+            var icon_04a2df67a80f470eb87b966c4120282a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "eye-close", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_401f7ee7d30b40d9a0cdc66fd75ffaca.setIcon(icon_04a2df67a80f470eb87b966c4120282a);
+        
+    
+        var popup_293179a39d504bcea9124c9108b4d5a7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_00b534c0504b4e75b4ced882e574d645 = $(`<div id="html_00b534c0504b4e75b4ced882e574d645" style="width: 100.0%; height: 100.0%;">Pyramid of Ahmose</div>`)[0];
+            popup_293179a39d504bcea9124c9108b4d5a7.setContent(html_00b534c0504b4e75b4ced882e574d645);
+        
+
+        marker_401f7ee7d30b40d9a0cdc66fd75ffaca.bindPopup(popup_293179a39d504bcea9124c9108b4d5a7)
+        ;
+
+        
+    
+</script>
+</body>
+</html>
