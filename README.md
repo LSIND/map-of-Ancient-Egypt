@@ -7,7 +7,7 @@ Probably all of you saw maps of Ancient Egyptian sites (I had school workbook) i
 ![Map of Ancient Egypt](https://www.dropbox.com/s/cvhbuugrkstto3b/map-of-ancient-egypt.png?raw=1)
 
 ### &#x1F53A; The interactive maps are in my [Kaggle notebook](https://www.kaggle.com/lsind18/pyramids-of-ancient-egypt-on-a-map)
-This kernel thought to be a recreation of this kind of map in an interactive way but the problem I faced was the absolute absence of some dataset or even list with coordinates of ancient pyramids. So I took different historical sources, Google Maps and combined it in a dataset of known pyramids [on Kaggle](https://www.kaggle.com/lsind18/egyptianpyramids) or on [GitHub](https://github.com/LSIND/map-of-Ancient-Egypt/blob/master/pyramids.csv). If you know more information or find some nonconformity - let me know! **Such important part of mankind history shouldn't be forgotten.**
+<p align="justify">This Python notebook thought to be a recreation of this kind of map in an interactive way but the problem I faced was the absolute absence of some dataset or even list with coordinates of ancient pyramids. So I took different historical sources, Google Maps and combined it in a dataset of known pyramids <a href="https://www.kaggle.com/lsind18/egyptianpyramids">on Kaggle</a> or on <a href="https://github.com/LSIND/map-of-Ancient-Egypt/blob/master/pyramids.csv">GitHub</a>. If you know more information or find some nonconformity - let me know! <b>Such important part of mankind history shouldn't be forgotten.</b></p>
 
 
 ### &#x1F53A; Short overview of this work.
@@ -15,6 +15,8 @@ This kernel thought to be a recreation of this kind of map in an interactive way
 > This notebook uses only 2 modules: *pandas* (for dataframes) and *folium* (for interactive maps).
 
 **1. Import modules**
+
+[folium](https://python-visualization.github.io/folium/) is based on OpenStreetMap
 
 **2. Check the [.csv file with pyramids](https://github.com/LSIND/map-of-Ancient-Egypt/blob/master/pyramids.csv):**
 
@@ -34,8 +36,7 @@ This kernel thought to be a recreation of this kind of map in an interactive way
 - maximum height of pyramid is 145 meters (ruined Pyramid Lepsius I) and minimum - 6.8 m (Pyramid of Seila).
 
 **4. Arrange pyramids into periods:**
-
->*I am taking in consideration only Early Dynastic Period, Old Kingdom, FIP, Middle Kingdom, SIP and the beginning of New Kingdom.*
+<p align="justify"><i>I am taking in consideration only Early Dynastic Period, Old Kingdom, FIP, Middle Kingdom, SIP and the beginning of New Kingdom.</i></p>
 
 |   | Period                                                 | Years (approx.)         | Dynasties                                                                                                                                                                                                                                                                                                              |
 |---|--------------------------------------------------------|-------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -52,8 +53,7 @@ This kernel thought to be a recreation of this kind of map in an interactive way
   - provide a legend.
   
   **6. Сreating a map**
-  
-  ![Map of Ancient Egypt](https://www.dropbox.com/s/q6xy1v8ionlny74/map1.JPG?raw=1)
+<a href="Map-pyramids.html" />Map</a>
   
   ```Result: Map with pyramids on it!```
    - glyphicon with open eye shows if Pharaoh' name is certain
