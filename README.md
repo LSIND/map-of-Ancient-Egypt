@@ -1,19 +1,23 @@
 # Map of Pyramids of Ancient Egypt
 
-## Man fears time, but time fears the Pyramids.
+## &#x1F53A; Man fears time, but time fears the Pyramids.
 
 Probably all of you saw maps of Ancient Egyptian sites (I had school workbook) in stylized way like this below:
 
 ![Map of Ancient Egypt](https://www.dropbox.com/s/cvhbuugrkstto3b/map-of-ancient-egypt.png?raw=1)
 
-This kernel thought to be a recreation of this kind of map in an interactive way but the problem I faced was the absolute absence of some dataset or even list with coordinates of ancient pyramids. So I took different historical sources, Google Maps and combined it in a [dataset of known pyramids](https://www.kaggle.com/lsind18/egyptianpyramids). If you know more information or find some nonconformity - let me know! **Such important part of mankind history shouldn't be forgotten.**
+### &#x1F53A; The interactive maps are in my [Kaggle notebook](https://www.kaggle.com/lsind18/pyramids-of-ancient-egypt-on-a-map)
+This kernel thought to be a recreation of this kind of map in an interactive way but the problem I faced was the absolute absence of some dataset or even list with coordinates of ancient pyramids. So I took different historical sources, Google Maps and combined it in a dataset of known pyramids [on Kaggle](https://www.kaggle.com/lsind18/egyptianpyramids) or on [GitHub](https://github.com/LSIND/map-of-Ancient-Egypt/blob/master/pyramids.csv). If you know more information or find some nonconformity - let me know! **Such important part of mankind history shouldn't be forgotten.**
+
+
+### &#x1F53A; Short overview of this work.
 
 > This notebook uses only 2 modules: *pandas* (for dataframes) and *folium* (for interactive maps).
 
 **1. Import modules**
 
 **2. Check the [.csv file with pyramids](https://github.com/LSIND/map-of-Ancient-Egypt/blob/master/pyramids.csv):**
-> More description can be found on Kagle page [Pyramids of Ancient Egypt](https://www.kaggle.com/lsind18/egyptianpyramids).
+
  - the file contains 62 Egyptian pyramids;
  - every pyramid has a *Modern Name* and some of them have an *Ancient Name* as it was translated from ancient egyptian hieroglyphs;
  - every pyramid has its coordinates - *Latitude* and *Longitude* in decimal form;
@@ -24,9 +28,7 @@ This kernel thought to be a recreation of this kind of map in an interactive way
  - some pyramids are marked with a [*Lepsius* number](https://en.wikipedia.org/wiki/Lepsius_list_of_pyramids) which is a roman number from I to LXVII plus the pyramid number LG100 (pyramid of Khentkaus I);
  - most pyramids have a *Type* of construction (Step, True, Smooth-faced, Smooth-sided) and most used *Material* (Limestone, Mudbrick, Granite, Sandstone or a combination);
  - there is also a column *Comment* which contains some descriptive information.
- 
- I also present this work and dataset on Kaggle.
- https://www.kaggle.com/lsind18/egyptianpyramids
+
  
  **3. Get some statistics:**
 - maximum height of pyramid is 145 meters (ruined Pyramid Lepsius I) and minimum - 6.8 m (Pyramid of Seila).
@@ -44,7 +46,6 @@ This kernel thought to be a recreation of this kind of map in an interactive way
 | 5 | Second Intermediate Period (SIP)                       | c. 1650 BC – c. 1550 BC | 15. Fifteenth Dynasty of Egypt (1650 BC–ca. 1550 BC) <br> 16. Sixteenth Dynasty of Egypt (1649 BC–1582 BC) <br> 17. Seventeenth Dynasty of Egypt (ca. 1580 BC–ca. 1550 BC)                                                                                                                                             |
 | 6 | New Kingdom <br> (*Egyptian Empire*)                   | c. 1550 BC – c. 1069 BC | 18. Eighteenth Dynasty of Egypt (1550 BC–1292 BC)                                                                                                                                                                                                                                                                      |
 
-
 **5. Some preparations before creating marks on the map:**
   - find mean latitude and longitude of dataset;
   - create function to color different kingdoms;
@@ -55,8 +56,8 @@ This kernel thought to be a recreation of this kind of map in an interactive way
   ![Map of Ancient Egypt](https://www.dropbox.com/s/q6xy1v8ionlny74/map1.JPG?raw=1)
   
   ```Result: Map with pyramids on it!```
-   - glyphicon with open eye shows if Pharaoh' is certain
-   - Early Dyn. Peroiod: &#x1F49C; (violet), Old Kingdom: &#x1F49A; (green), FIP: &#x1F499; (blue), Middle Kingdom: &#x1F536; (orange), SIP: &#x1F49B; (yellow), New Kingdom: &#x1F497; (red)
+   - glyphicon with open eye shows if Pharaoh' name is certain
+   - Early Dyn. Peroiod: &#x1F49C; (violet), Old Kingdom: &#x1F49A; (green), FIP: &#x1F499; (blue), Middle Kingdom: &#x1F536; (orange), SIP: &#x1F49B; (yellow), New Kingdom: :heart: (red)
 
 **7. Create [Lepsius list](https://en.wikipedia.org/wiki/Lepsius_list_of_pyramids) and map**
 
@@ -66,6 +67,5 @@ This kernel thought to be a recreation of this kind of map in an interactive way
 ![Lepsius Map](https://www.dropbox.com/s/fs0qougstmvdkow/mapL.JPG?raw=1)
 
 ```Result: Lepsius Map !```
-
 
 &#x1F53A; P.S. Feel free to contact me if you have some additional info about [Egyptian pyramids dataset](https://www.kaggle.com/lsind18/egyptianpyramids).
