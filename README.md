@@ -1,22 +1,23 @@
-# Map of Pyramids of Ancient Egypt
+# OpenStreetMap of Pyramids of Ancient Egypt
 
-## &#x1F53A; Man fears time, but time fears the Pyramids.
+> ### Man fears time, but time fears the Pyramids.
 
 Probably all of you saw maps of Ancient Egyptian sites (I had school workbook) in stylized way like this below:
 
 ![Map of Ancient Egypt](https://www.dropbox.com/s/cvhbuugrkstto3b/map-of-ancient-egypt.png?raw=1)
 
-### &#x1F53A; The interactive maps are in my [Kaggle notebook](https://www.kaggle.com/lsind18/pyramids-of-ancient-egypt-on-a-map)
-<p align="justify">This Python notebook thought to be a recreation of this kind of map in an interactive way but the problem I faced was the absolute absence of some dataset or even list with coordinates of ancient pyramids. So I took different historical sources, Google Maps and combined it in a dataset of known pyramids <a href="https://www.kaggle.com/lsind18/egyptianpyramids">on Kaggle</a> or on <a href="https://github.com/LSIND/map-of-Ancient-Egypt/blob/master/pyramids.csv">GitHub</a>. If you know more information or find some nonconformity - let me know! <b>Such important part of mankind history shouldn't be forgotten.</b></p>
+<p align="justify">This Python notebook thought to be a recreation of this kind of map in an interactive way but the problem I faced was the absolute absence of some dataset or even list with coordinates of ancient pyramids. So I took different historical sources, Google Maps and combined it in a dataset of known pyramids as an .csv file (<a href="https://www.kaggle.com/lsind18/egyptianpyramids">on Kaggle</a> or <a href="https://github.com/LSIND/map-of-Ancient-Egypt/blob/master/pyramids.csv">on GitHub</a>). If you know more information or find some nonconformity - let me know! <b>Such important part of mankind history shouldn't be forgotten.</b></p>
 
+### &#x1F53A; Short (historical mostly) overview of this work.
 
-### &#x1F53A; Short overview of this work.
+> This notebook uses only 2 modules: [*pandas*](https://pandas.pydata.org) (for dataframes) and [*folium*](https://python-visualization.github.io/folium/) (for interactive maps based on OpenStreetMap).
 
-> This notebook uses only 2 modules: *pandas* (for dataframes) and *folium* (for interactive maps).
+**1. Install and import modules**
 
-**1. Import modules**
-
-[folium](https://python-visualization.github.io/folium/) is based on OpenStreetMap
+```
+pip install pandas
+pip install folium
+```
 
 **2. Check the [.csv file with pyramids](https://github.com/LSIND/map-of-Ancient-Egypt/blob/master/pyramids.csv):**
 
@@ -53,8 +54,11 @@ Probably all of you saw maps of Ancient Egyptian sites (I had school workbook) i
   - provide a legend.
   
   **6. Сreating a map**
-<a href="Map-pyramids.html" />Map</a>
-  
+
+![Map with known pyramids](https://www.dropbox.com/s/q6xy1v8ionlny74/map1.JPG?raw=1)
+
+### :earth_africa: View in browser: [OpenStreetMap of 62 pyramids](https://lsind.github.io/map-of-Ancient-Egypt/map-pyramids.html)
+
   ```Result: Map with pyramids on it!```
    - glyphicon with open eye shows if Pharaoh' name is certain
    - Early Dyn. Peroiod: &#x1F49C; (violet), Old Kingdom: &#x1F49A; (green), FIP: &#x1F499; (blue), Middle Kingdom: &#x1F536; (orange), SIP: &#x1F49B; (yellow), New Kingdom: :heart: (red)
@@ -66,6 +70,10 @@ Probably all of you saw maps of Ancient Egyptian sites (I had school workbook) i
 
 ![Lepsius Map](https://www.dropbox.com/s/fs0qougstmvdkow/mapL.JPG?raw=1)
 
-```Result: Lepsius Map !```
+```Result: Lepsius Map!```
 
-&#x1F53A; P.S. Feel free to contact me if you have some additional info about [Egyptian pyramids dataset](https://www.kaggle.com/lsind18/egyptianpyramids).
+### :earth_africa: View in browser: [OpenStreetMap of Lepsius list](https://lsind.github.io/map-of-Ancient-Egypt/map-lepsius.html)
+
+### &#x1F53A; The interactive maps in my [Kaggle notebook](https://www.kaggle.com/lsind18/pyramids-of-ancient-egypt-on-a-map)
+
+P.S. Feel free to contact me if you have some additional info about [Egyptian pyramids dataset](https://www.kaggle.com/lsind18/egyptianpyramids).
