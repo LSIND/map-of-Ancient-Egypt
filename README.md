@@ -12,8 +12,8 @@ This kernel thought to be a recreation of this kind of map in an interactive way
 
 **1. Import modules**
 
-**2. Check the .csv file with pyramids:**
-
+**2. Check the [.csv file with pyramids](https://github.com/LSIND/map-of-Ancient-Egypt/blob/master/pyramids.csv):**
+> More description can be found on Kagle page [Pyramids of Ancient Egypt](https://www.kaggle.com/lsind18/egyptianpyramids).
  - the file contains 62 Egyptian pyramids;
  - every pyramid has a *Modern Name* and some of them have an *Ancient Name* as it was translated from ancient egyptian hieroglyphs;
  - every pyramid has its coordinates - *Latitude* and *Longitude* in decimal form;
