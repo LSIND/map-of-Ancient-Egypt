@@ -6,7 +6,7 @@ Probably all of you saw maps of Ancient Egyptian sites (I had school workbook) i
 
 ![Map of Ancient Egypt](https://www.dropbox.com/s/cvhbuugrkstto3b/map-of-ancient-egypt.png?raw=1)
 
-<p align="justify">This Python notebook thought to be a recreation of this kind of map in an interactive way but the problem I faced was the absolute absence of some dataset or even list with coordinates of ancient pyramids. So I took different historical sources, Google Maps and combined it in a dataset of known pyramids as an .csv file (<a href="https://www.kaggle.com/lsind18/egyptianpyramids">on Kaggle</a> or <a href="https://github.com/LSIND/map-of-Ancient-Egypt/blob/master/pyramids.csv">on GitHub</a>). If you know more information or find some nonconformity - let me know! <b>Such important part of mankind history shouldn't be forgotten.</b></p>
+<p align="justify">I wished to recreate this kind of map using Python and OpenStreetMap but the problem I faced was the absolute absence of some dataset or even list with coordinates of egyptian pyramids. So I took different historical sources, Google Maps, wikipedia (in English, French, Deutsch, Russian) and combined the information in one dataset of known pyramids as an .csv file (<a href="https://www.kaggle.com/lsind18/egyptianpyramids">on Kaggle</a> or <a href="https://github.com/LSIND/map-of-Ancient-Egypt/blob/master/pyramids.csv">on GitHub</a>). If you know more information or find some nonconformity - let me know! <b>Such important part of mankind history shouldn't be forgotten.</b></p>
 
 ### &#x1F53A; Short (historical mostly) overview of this work.
 
@@ -34,7 +34,7 @@ pip install folium
 
  
  **3. Get some statistics:**
-- maximum height of pyramid is 145 meters (ruined Pyramid Lepsius I) and minimum - 6.8 m (Pyramid of Seila).
+- maximum height of pyramid is 146.6 meters (Great Pyramid of Giza) and minimum - 6.8 meters (Pyramid of Seila).
 
 **4. Arrange pyramids into periods:**
 > <p align="justify"><i>I am taking in consideration only Early Dynastic Period, Old Kingdom, FIP, Middle Kingdom, SIP and the beginning of New Kingdom.</i></p>
@@ -60,7 +60,7 @@ pip install folium
 ### :earth_africa: View in browser: [OpenStreetMap of 62 pyramids](https://lsind.github.io/map-of-Ancient-Egypt/map-pyramids.html)
 
    - glyphicon with open eye shows if Pharaoh' name is certain
-   - Early Dyn. Peroiod: &#x1F49C; (violet), Old Kingdom: &#x1F49A; (green), FIP: &#x1F499; (blue), Middle Kingdom: &#x1F536; (orange), SIP: &#x1F49B; (yellow), New Kingdom: :heart: (red)
+   - popup shows the modern name of pyramid
 
 **7. Create [Lepsius list](https://en.wikipedia.org/wiki/Lepsius_list_of_pyramids) and map**
 
@@ -71,6 +71,9 @@ pip install folium
 
 
 ### :earth_africa: View in browser: [OpenStreetMap of Lepsius list](https://lsind.github.io/map-of-Ancient-Egypt/map-lepsius.html)
+
+   - red circle represents a pyramid with a roman number in it; zoom in!
+   - popup shows the owner's (pharaoh or his wife) name
 
 ------------------------------
 
