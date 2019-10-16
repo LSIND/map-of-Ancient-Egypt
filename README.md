@@ -10,7 +10,7 @@ Probably all of you saw maps of Ancient Egyptian sites (I had school workbook) i
 
 ### &#x1F53A; Short (historical mostly) overview of this work.
 
-> This notebook uses only 2 modules: [*pandas*](https://pandas.pydata.org) (for dataframes) and [*folium*](https://python-visualization.github.io/folium/) (for interactive maps based on OpenStreetMap).
+> Source code uses only 2 modules: [*pandas*](https://pandas.pydata.org) (for dataframes) and [*folium*](https://python-visualization.github.io/folium/) (for interactive maps based on OpenStreetMap).
 
 **1. Install and import modules**
 
