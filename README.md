@@ -107,7 +107,7 @@ pip install folium
 ![Lepsius Map](https://www.dropbox.com/s/fs0qougstmvdkow/mapL.JPG?raw=1)
 
 
-### :earth_africa: View in browser: [OpenStreetMap of Lepsius list](https://lsind.github.io/map-of-Ancient-Egypt/map-lepsius.html)
+### :earth_africa: View in browser: [OpenStreetMap of Lepsius list](https://lsind.github.io/map-of-Ancient-Egypt/map-Lepsius.html)
 
    - red circle represents a pyramid with a roman number in it; zoom in!
    - popup shows the owner's (pharaoh or his wife) name
