@@ -1,0 +1,63 @@
+Pharaoh,Ancient name,Modern name,Dynasty,Site,Base1 (m),Base2 (m),Height (m),Slope (dec degr),Volume (cu.m),Latitude,Longitude,Type,Lepsius,Material,Comment
+Djoser,Hiemlender,Step Pyramid of Djoser,3,Saqqara,121,109,60,,330.4,29.871215,31.216644,Step,XXXII,Mudbrick,
+Sekhemkhet,-,Buried Pyramid,3,Saqqara,120,120,70,,33.6,29.866,31.213,Step,,Mudbrick,(unfinished)
+Khaba (?),-,Layer Pyramid,3,Zawyet el'Aryan,84,84,40,,47.04,29.93282,31.161262,Step,XIV,Mudbrick,(unfinished)
+Huni,-,Pyramid Lepsius I,3,Abu Rawash,215,215,145,,,30.040833,31.094444,Step,I,Mudbrick,totally ruined
+Huni (?),-,Pyramid of Athribis,3,Athribis,20,20,16,50,,30.470556,31.188056,Step,,Mudbrick,
+Huni (?),-,Pyramid of Elephantine,3,Elephantine,18,18,10.5,82,,24.085556,32.885278,Step,,Rose Granite,
+Huni (?),-,Edfu South Pyramid,3,Edfu,18,18,12.5,77,,24.943611,32.841944,Step,,Sandstone,
+Huni (?),-,Al Kula Pyramid,3,Hierakonpolis,19,19,12,77,,25.116667,32.800000,Step,,Limestone,
+Huni (?),-,Pyramid of Naqada (Pyramid of Ombos),3,Naqada,19,19,14,80,,25.940556,32.709167,Step,,Limestone,
+Huni (?),-,Pyramid of Sinki,3,Abydos,19,19,12.5,80,,26.157778,31.966111,Step,,Limestone,
+Huni (?),-,Pyramid of Zawyet el-Maiyitin,3,Al-Minya,22.4,22.4,17,80,,28.045833,30.828611,Step,,Limestone,
+Sneferu,-,Pyramid of Seila,4,Seila,25,25,6.8,76,,29.382589,31.053581,Step,,Limestone,
+Sneferu,Snefru endures,Pyramid of Meidum,4,Meidum,144,144,92,51.84,638.733,29.388056,31.156944,Smooth-faced,LXV,Limestone,
+Sneferu,Snefru shines in the South,Bent Pyramid,4,Dahshur,188,188,105,54.46,1.237.040,29.790278,31.209167,Bent,LVI,Limestone,
+Sneferu,Snefru shines in the North,Red Pyramid (North Pyramid),4,Dahshur,220,220,105,43.37,1.694.000,29.808333,31.205833,Smooth-faced,XLIX,Limestone,
+Hetepheres I,-,Pyramid G1-a,4,Giza,49.5,49.5,30.25,,,29.978836,31.136261,True,V,Limestone,
+Meritites I,-,Pyramid G1-b,4,Giza,50,50,30,33,,29.978333,31.136111,True,VI,Limestone,
+Henutsen,King's daughter. Henutsen,Pyramid G1-c,4,Giza,46.25,46.25,29.60,52,,29.977778,31.136389,True,VII,Limestone,
+Khufu,-,Pyramid G1-d,4,Giza,23,23,14,52,,29.97785,31.136256,True,,Limestone,
+Khufu,Khufu's horizon,The Great Pyramid of Giza,4,Giza,230.3,230.3,146.6,51.84,2.583.283,29.979167,31.134167,True,IV,Limestone. granite,
+Djedefre,Djedefre's Starry Sky,Pyramid of Djedefre,4,Abu Rawash,106,106,67,52,131.043,30.032222,31.074722,True,II,Limestone. granite,
+Bikheris (?),Star of ..?..-Ka,Unfinished Northern Pyramid of Zawyet el'Aryan,4,Zawyet el'Aryan,200,200,,52,,29.940122,31.151556,True,XIII,,(unfinished)
+Khafra,Khafra is great,Pyramid of Khafre,4,Giza,215.25,215.25,143.5,53.17,2.211.096,29.975947,31.130698,True,VIII,Limestone,
+Menkaure,Menkaure is divine,Pyramid of Menkaure,4,Giza,105.46,105.46,65.5,51.34,235.183,29.972378,31.128327,True,IX,Limestone. granite,
+Menkaure,-,Pyramid G-3c (western),4,Giza,31.50,31.50,21.00,,7.00,29.971592,31.127274,Step,X,Limestone,Menkaure' wife (?)
+Menkaure,-,Pyramid G-3b (middle),4,Giza,31.50,31.50,21.00,,7.00,29.971592,31.127783,Step,XI,Limestone,Menkaure' wife (?)
+Menkaure,-,Pyramid G-3a (eastern),4,Giza,44.40,44.40,28.30,,18.69,29.971592,31.128293,True,XII,Limestone,Menkaure' wife (?)
+Shepseskaf,The Purified Pyramid,Mastabat al-Fir'aun,4,Giza,99.6,74.4,18,70,148.271,29.838889,31.215,Step,,Sandstone. Granite. Limestone,Mastaba
+Khentkawes,-,Step tomb of Khentkaus I,4,Giza,35.5,45.8,17.5,74,6.372,29.973306,31.135361,Step,LG100,Bedrock. Limestone,LG 100
+Menkauhor (?),-,Pyramid Lepsius L,4,Dahshur,85,85,,,,29.810833,31.212222,-,L,Limestone,Never built. earthwork just started
+Userkaf,The pure sites of Userkaf,Pyramid of Userkaf,5,Saqqara,73.3,73.3,49,53.13,87.906,29.873611,31.218889,True,XXXI,Limestone,
+Neferhetepes ,-,Pyramid of Neferhetepes (wife of Userkaf),5,Saqqara,26,26,17,52,,29.87275,31.2186,Smooth-faced,,Limestone,
+Sahure,The personality (ba) of Sahure appears,Pyramid of Sahure,5,Abusir,78.75,78.75,47,50.19,96.542,29.897778,31.203333,True,XVIII,Limestone,
+Neferirkare Kakai,Personality (ba) of Neferirkare,Pyramid of Neferirkare,5,Abusir,72,72,52,53.13,257.25,29.895,31.2025,Step,XXI,Limestone,Later converted to true type
+Neferefre,The power of Neferefre is divine,Pyramid of Neferefre,5,Abusir,65,65,,,,29.893889,31.201667,Smooth-sided,XXVI,Limestone,(unfinished)
+Khentkawes II,King's Wife (King's Mother),Pyramid of Queen Khentkawes II,5,Abusir,25,25,16,52,,29.894143,31.202523,True,XXV,Limestone,
+Shepseskare (?),-,Unfinished pyramid of North Abusir,5,Abusir,105,105,,,,29.898664,31.201633,True,XXVIII,Limestone,(unfinished)
+Nyuserre Ini,The seats of Niuserre will endure,Pyramid of Nyuserre,5,Abusir,78.9,78.9,51.68,51.84,112.632,29.895667,31.203556,Smooth-sided,XX,Limestone,
+Menkauhor Kaiu,The divine places of Menkauhor,Headless Pyramid,5,Saqqara,52,52,52.50,,,29.875278,31.223611,Smooth-faced,XXIX,Limestone,
+Djedkare Isesi,Beautiful is Djedkare,Pyramid of Djedkare-Isesi,5,South Saqqara,78.75,78.75,52.5,52,107.835,29.851111,31.220833,True,XXXVII,Limestone,
+Unas,The places of Unas are beautiful,Pyramid of Unas,5,North Saqqara,57.75,57.75,43,56.31,47.39,29.868333,31.214722,Smooth-sided,XXXV,Limestone,
+Teti,The places of Teti are enduring,Pyramid of Teti,6,North Saqqara,78.75,78.75,52.5,53.13,107.835,29.875278,31.221667,Smooth-sided,XXX,Limestone,
+Pepi I,The beauty of Pepi may endure,Pyramid of Pepi I,6,South Saqqara,78.75,78.75,52.5,53.13,107.835,29.85451,31.21909,True,XXXVI,Limestone,
+Merenre,The beauty of Merenre appears,Pyramid of Merenre,6,South Saqqara,78.75,78.75,52.5,53.13,107.835,29.850556,31.215,True,XXXIX,Limestone,
+Pepi II,Pepi is established and living,Pyramid of Pepi II,6,South Saqqara,79,79,52.4,53.13,107.835,29.8403,31.2133,True,XLI,Limestone,
+Qakare Ibi,-,Pyramid of Ibi,8,South Saqqara,31.5,31.5,21,53.11,6.994,29.841667,31.217778,True,XL,Limestone,
+Khui,-,Pyramid of Khui,8,Dara,146,136,15,,,27.307778,30.871667,Step,,Limestone,FIP
+Amenemhat I,Amenemhat appears at his place,Pyramid of Amenemhet I,12,Lisht,84,84,55,54.46,129.36,29.574722,31.225,Smooth-faced,LX,Limestone,
+Senusret I,Senusret beholds the two lands,Pyramid of Senusret I,12,Lisht,105,105,61.25,49.40,225.093,29.560009,31.220876,Smooth-faced,LXI,Limestone,
+Amenemhat II,Amenemhat is provided,White Pyramid,12,Dahshur,50,50,84,,,29.805563,31.222781,True,LI,Limestone,
+Senusret II,Senusret Shines,Pyramid of Senusret II,12,El-Lahun,106,106,48.6,42.58,185.665,29.233333,30.966667,Smooth-faced,LXVI,Mudbrick,
+Senusret III,-,Pyramid of Senusret III,12,Dahshur,105,105,63,56.31,288.488,29.818889,31.225556,True,XLVII,Mudbrick,
+Amenemhat III,Amenemhat is beautiful,Black Pyramid,12,Dahshur,105,105,75,57.26,274.625,29.791667,31.223611,True,LVIII,Mudbrick,
+Amenemhat III,Amenemhat lives,Pyramid of Hawara,12,Hawara,105,105,58,48.75,200.158,29.274240,30.898973,True,LXVII,Mudbrick,
+Amenemhat IV (?),-,Southern Mazghuna pyramid,13,Dahshur,52.5,52.5,,,,29.761667,31.220833,True,,Mudbrick,(unfinished)
+Sobekneferu (?),-,Northern Mazghuna pyramid,13,Dahshur,52.5,52.5,,,,29.7675,31.220833,True,LIX,Limestone,(unfinished)
+Ameny Qemau,-,Pyramid of Ameny Qemau,13,Dahshur,52,52,35,53.22,,29.781667,31.221389,True,,Mudbrick,SIP
+Khendjer,-,Pyramid of Khendjer,13,South Saqqara,52.5,52.5,37.35,55,44.096,29.832222,31.223889,True,XLIV,Mudbrick,SIP
+Weserkhau (?),-,Southern South Saqqara pyramid,13,South Saqqara,78.75,78.75,,,,29.830556,31.222222,True,XLVI,Mudbrick,SIP
+Neferhotep I,-,Tomb S9,13,Abydos,45,60,,,,26.171389,31.925,Mastaba,,Mudbrick,SIP
+Sobekhotep IV,-,Tomb S10,13,Abydos,40,30,,,,26.171111,31.924167,Mastaba,,Mudbrick,SIP
+Ahmose I,-,Pyramid of Ahmose,18,Abydos,52.5,52.5,40,60,,26.175,31.937778,Cenotaph,,Limestone,
