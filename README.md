@@ -2,7 +2,7 @@
 
 > ### Man fears time, but time fears the Pyramids.
 
-Probably all of you saw maps of Ancient Egyptian sites (I had school workbook) in stylized way like this below:
+Probably all of you saw maps of Ancient Egyptian sites (I had a school workbook) in stylized way like this:
 
 ![Map of Ancient Egypt](https://www.dropbox.com/s/cvhbuugrkstto3b/map-of-ancient-egypt.png?raw=1)
 
@@ -19,7 +19,7 @@ pip install pandas
 pip install folium
 ```
 
-**2. Check the [.csv file with pyramids](https://github.com/LSIND/map-of-Ancient-Egypt/blob/master/pyramids.csv):**
+**2. Check the [.csv file with pyramids](https://github.com/LSIND/map-of-Ancient-Egypt/blob/master/pyramids.csv)**
 
  - the file contains 62 Egyptian pyramids;
  - every pyramid has a *Modern Name* and some of them have an *Ancient Name* as it was translated from ancient egyptian hieroglyphs;
@@ -33,10 +33,10 @@ pip install folium
  - there is also a column *Comment* which contains some descriptive information.
 
  
- **3. Get some statistics:**
+ **3. Get some statistics**
 - maximum height of pyramid is 146.6 meters (Great Pyramid of Giza) and minimum - 6.8 meters (Pyramid of Seila).
 
-**4. Arrange pyramids into periods:**
+**4. Arrange pyramids into periods**
 > <p align="justify"><i>I am taking in consideration only Early Dynastic Period, Old Kingdom, FIP, Middle Kingdom, SIP and the beginning of New Kingdom.</i></p>
 
 <table class="tg">
@@ -85,24 +85,24 @@ pip install folium
 </table>
 </sup>
 
-**5. Some preparations before creating marks on the map:**
+**5. Some preparations before creating marks on the map**
   - find mean latitude and longitude of dataset;
   - create function to color different kingdoms;
   - provide a legend.
   
-  **6. Сreating a map**
+  **6. Сreate a map**
 
 ![Map with known pyramids](https://www.dropbox.com/s/q6xy1v8ionlny74/map1.JPG?raw=1)
 
 ### :earth_africa: View in browser: [OpenStreetMap of 62 pyramids](https://lsind.github.io/map-of-Ancient-Egypt/map-pyramids.html)
 
-   - glyphicon with open eye shows if Pharaoh' name is certain
-   - popup shows the modern name of pyramid
+   - glyphicon with open eye shows if Pharaoh' name is certain;
+   - popup shows the modern name of pyramid.
 
 **7. Create [Lepsius list](https://en.wikipedia.org/wiki/Lepsius_list_of_pyramids) and map**
 
-- Drop rows where Lepsius column contains NaN values 
-- Create Lepsius map: zoom in to get the pyramids and the Pharaoh's name
+- Drop rows where Lepsius column contains NaN values; 
+- Create Lepsius map: zoom in to get the pyramids and the Pharaoh's name.
 
 ![Lepsius Map](https://www.dropbox.com/s/fs0qougstmvdkow/mapL.JPG?raw=1)
 
@@ -114,7 +114,7 @@ pip install folium
 
 ------------------------------
 
-### :small_red_triangle: The interactive maps in my [Kaggle notebook](https://www.kaggle.com/lsind18/pyramids-of-ancient-egypt-on-a-map)
+### &#x1F53A; The interactive maps in my [Kaggle notebook](https://www.kaggle.com/lsind18/pyramids-of-ancient-egypt-on-a-map)
 
 ### :page_facing_up:  Source code on GitHub [.py and .ipynb](https://github.com/LSIND/map-of-Ancient-Egypt/tree/master/source)
 

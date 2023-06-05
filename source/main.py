@@ -15,11 +15,7 @@ there is also a column Comment which contains some descriptive information.'''
 import pandas as pd
 import folium
 
-lat_mean = 29.22 # fix it
-lon_mean = 31.3
-prmds = pd.read_csv('../pyramids.csv') # make it 'global'
-
-def saveMap():
+def saveMap(prmds):
 	'''ARRANGEs PYRAMIDS INTO PERIODS:
 	has a function to color different kingdoms;
 	provides a legend
@@ -59,53 +55,54 @@ def saveMap():
 
 	m = folium.Map(location = [lat_mean, lon_mean], #center of a map
                zoom_start=6, min_zoom = 5, width = 600, control_scale = True)
+	try:
+		for i in range(0,len(prmds)):
+			lat = prmds.iloc[i]['Latitude']
+			lon = prmds.iloc[i]['Longitude']
+			folium.Marker([lat, lon], popup=prmds.iloc[i]['Modern name'], # show a modern name of pyramid in popup
+					icon=folium.Icon(color=col_dyn(prmds.iloc[i]['Dynasty']),
+									icon='eye-close' if str(prmds.iloc[i]['Pharaoh']).find("?")==-1 else 'eye-open') # glyphicon with open eye if Pharaoh is certain
+					).add_to(m)
+		m.get_root().html.add_child(folium.Element(legend_kingdom))		
+		m.save(outfile= "../map-of-ancient-egypt/docs/map-pyramids.html")
+	except Exception as e:
+		print(f'Error creating map: {e}')
+		return 
+	return 'Map successfully created.'
 
-	for i in range(0,len(prmds)):
-		lat = prmds.iloc[i]['Latitude']
-		lon = prmds.iloc[i]['Longitude']
-		folium.Marker([lat, lon], popup=prmds.iloc[i]['Modern name'], # show a modern name of pyramid in popup
-                  icon=folium.Icon(color=col_dyn(prmds.iloc[i]['Dynasty']),
-                                   icon='eye-close' if str(prmds.iloc[i]['Pharaoh']).find("?")==-1 else 'eye-open') # glyphicon with open eye if Pharaoh is certain
-                 ).add_to(m)
-	m.get_root().html.add_child(folium.Element(legend_kingdom))
-	#display(m)
-	m.save(outfile= "map-pyramids.html")
-
-
-def saveLepsiusMap():
+def saveLepsiusMap(prmds_Le):
 	'''Creats Lepsius list and map
 	Drop rows where Lepsius column contains NaN values
 	zoom in to get the pyramids and the Pharaoh's name'''
 	prmds_Le = prmds.dropna(subset=['Lepsius'])
 	m2 = folium.Map(location = [prmds_Le['Latitude'].mean(), prmds_Le['Longitude'].mean()],
                zoom_start=9, min_zoom = 6, width = 600)
+	try:
+		for i in range(0,len(prmds_Le)):
+			lat = prmds_Le.iloc[i]['Latitude']
+			lon = prmds_Le.iloc[i]['Longitude']
+			temp = prmds_Le.iloc[i]['Lepsius']
+			folium.CircleMarker([lat, lon],  radius=8,  color='red', fill=True, fill_color='red').add_to(m2)
+			folium.Marker([lat, lon], 
+					popup=prmds_Le.iloc[i]['Pharaoh'], 
+							icon=folium.DivIcon(html=f'''<div style="font-family: arial; color: 'black'">{"{}".format(temp)}</div>''')
+					
+			).add_to(m2)		
+		m2.save(outfile= "../map-of-ancient-egypt/docs/map-Lepsius.html")
+	except Exception as e:
+		print(f'Error creating Lepsius map: {e}')
+		return 
+	return 'Lepsius map successfully created.'
 
-	for i in range(0,len(prmds_Le)):
-		lat = prmds_Le.iloc[i]['Latitude']
-		lon = prmds_Le.iloc[i]['Longitude']
-		temp = prmds_Le.iloc[i]['Lepsius']
-		folium.CircleMarker([lat, lon],  radius=8,  color='red', fill=True, fill_color='red').add_to(m2)
-		folium.Marker([lat, lon], 
-                  popup=prmds_Le.iloc[i]['Pharaoh'], 
-                         icon=folium.DivIcon(html=f'''<div style="font-family: arial; color: 'black'">{"{}".format(temp)}</div>''')
-                
-        ).add_to(m2)
-	#display(m2)
-	m2.save(outfile= "map-Lepsius.html")
-
-
-def main():
+if __name__ == '__main__':	
+	lat_mean = 29.22 # fix it
+	lon_mean = 31.3
+	prmds = pd.read_csv('../map-of-ancient-egypt/pyramids.csv') 
 	# Get some statistics:
 	print(prmds.describe())
 	# find mean latitude and longitude of dataset;
 	lat_mean = prmds['Latitude'].mean()
 	lon_mean = prmds['Longitude'].mean()
 	
-	saveMap()
-	saveLepsiusMap()
-
-main()
-
-
-
-
+	saveMap(prmds)
+	saveLepsiusMap(prmds)
