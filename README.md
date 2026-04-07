@@ -1,43 +1,31 @@
 # OpenStreetMap of Pyramids of Ancient Egypt
 
-> ### Man fears time, but time fears the Pyramids.
+## From Papyrus to Pixels: Building an Interactive Map of Egyptian Pyramids with OpenStreetMap
 
-Probably all of you saw maps of Ancient Egyptian sites (I had a school workbook) in stylized way like this:
+> Man fears time, but time fears the Pyramids.
+
+Most people are familiar with those stylized maps of ancient Egyptian sites you often see in school workbooks. Inspired by that style, this project set out to create a similar map using Python and OpenStreetMap. But the main problem was that there was no ready-made dataset /or even a simple list/ of the geographic coordinates of Egyptian pyramids.
 
 ![Map of Ancient Egypt](https://www.dropbox.com/s/cvhbuugrkstto3b/map-of-ancient-egypt.png?raw=1)
 
-<p align="justify">I wished to recreate this kind of map using Python and OpenStreetMap but the problem I faced was the absolute absence of some dataset or even list with coordinates of egyptian pyramids. So I took different historical sources, Google Maps, wikipedia (in English, French, Deutsch, Russian) and combined the information in one dataset of known pyramids as an .csv file (<a href="https://www.kaggle.com/lsind18/egyptianpyramids">on Kaggle</a> or <a href="https://github.com/LSIND/map-of-Ancient-Egypt/blob/master/pyramids.csv">on GitHub</a>). If you have more information or find some nonconformity - let me know! <b>Such important part of mankind history shouldn't be forgotten.</b></p>
+To fill that gap, I pulled together information from a bunch of different places: historical sources, Google Maps, and various research papers in English, French, German, Dutch, and Russian. The result is a CSV file with 62 documented pyramids (you can find it on [Kaggle](https://www.kaggle.com/lsind18/egyptianpyramids) or [GitHub](https://github.com/LSIND/map-of-Ancient-Egypt/blob/master/pyramids.csv)). For each pyramid, the file gives the modern name, plus the ancient name if we have a hieroglyphic transliteration. The coordinates are in decimal degrees. You'll also see who the pyramid is attributed to (if there's any doubt, it's marked with a "(?)") along with the dynasty and location.
 
-### &#x1F53A; Short (historical mostly) overview of this work.
+If you know more or spot something that doesn't match up, let me know! **Such important part of mankind history shouldn't be forgotten.**
 
-> Source code uses only 2 modules: [*pandas*](https://pandas.pydata.org) (for dataframes) and [*folium*](https://python-visualization.github.io/folium/) (for interactive maps based on OpenStreetMap).
+## Dataset Structure
 
-**1. Install and import modules**
+The accompanying CSV file comprises 62 records of Egyptian pyramids and adheres to the following schema:
+- Nomenclature: Each pyramid is identified by a Modern Name. Where transliterations from ancient Egyptian hieroglyphs are available, the corresponding Ancient Name is also provided.
+- Geospatial Data: Geographic coordinates (Latitude and Longitude) are supplied for all 62 entries in decimal degrees.
+- Attribution: The Owner field denotes the ruler associated with the structure. In cases of scholarly uncertainty, a "(?)" symbol follows the ruler's name. All entries include a Dynasty and a Site (location) designation.
+- Physical Dimensions: The original (intended or actual) dimensions of the pyramids are recorded. This includes the base lengths (Base1 (m) and Base2 (m)) and the Height (m), all expressed in meters.
+- Lepsius Classification: Some pyramids are identified by their Lepsius number, presented as a Roman numeral (I to LXVII), in addition to the distinct identifier LG100 for the pyramid of Khentkaus I.
+- Typology and Materials: The construction Type (e.g., Step, True, Smooth-faced) and primary building Material (e.g., Limestone, Mudbrick, Granite, Sandstone, or combinations thereof) are specified for the majority of entries.
+- Supplementary Notes: A Comment field is included to provide additional descriptive or contextual information.
+- Data Completeness: Certain entries contain gaps, most frequently in the fields for Slope and Volume.
 
-```
-pip install pandas
-pip install folium
-```
-
-**2. Check the [.csv file with pyramids](https://github.com/LSIND/map-of-Ancient-Egypt/blob/master/pyramids.csv)**
-
- - the file contains 62 Egyptian pyramids;
- - every pyramid has a *Modern Name* and some of them have an *Ancient Name* as it was translated from ancient egyptian hieroglyphs;
- - every pyramid has its coordinates - *Latitude* and *Longitude* in decimal form;
- - there are owners of a pyramid and sometimes supposed owners - symbol '**(?)**' follows the name of *Pharaoh*;
- - every pyramid is marked with it's *Dynasty* and location (*Site*);
- - there is missing data (*Slope* and *Volume* of some pyramids mostly);
- - base (*Base1 (m)* and *Base2 (m)*) and *Height (m)* of pyramid are in meters and represent the original size (that the pyramid was or was supposed to be);
- - some pyramids are marked with a [*Lepsius* number](https://en.wikipedia.org/wiki/Lepsius_list_of_pyramids) which is a roman number from I to LXVII plus the pyramid number LG100 (pyramid of Khentkaus I);
- - most pyramids have a *Type* of construction (Step, True, Smooth-faced, Smooth-sided) and most used *Material* (Limestone, Mudbrick, Granite, Sandstone or a combination);
- - there is also a column *Comment* which contains some descriptive information.
-
- 
- **3. Get some statistics**
-- maximum height of pyramid is 146.6 meters (Great Pyramid of Giza) and minimum - 6.8 meters (Pyramid of Seila).
-
-**4. Arrange pyramids into periods**
-> <p align="justify"><i>I am taking in consideration only Early Dynastic Period, Old Kingdom, FIP, Middle Kingdom, SIP and the beginning of New Kingdom.</i></p>
+## Chronological Classification of the Pyramids
+> <p align="justify"><i>For the purposes of this analysis, the pyramids are classified according to the standard chronological framework of ancient Egyptian history, encompassing the Early Dynastic Period through the beginning of the New Kingdom. The dynasties are enumerated following conventional Egyptological chronology.</i></p>
 
 <table class="tg">
   <tr>
@@ -85,37 +73,46 @@ pip install folium
 </table>
 </sup>
 
-**5. Some preparations before creating marks on the map**
-  - find mean latitude and longitude of dataset;
-  - create function to color different kingdoms;
-  - provide a legend.
+## Cartographic Methodology
+  - The interactive map was generated using the Folium library.
+  - The mean geographic coordinates of the dataset were calculated to establish an optimal initial viewport.
+  - For each pyramid in the dataset, a circular marker was placed at its corresponding coordinates.
+  - To enable period-based visualization, a classification scheme was implemented mapping dynasties to historical periods:
+
+| Period                     | Abbreviation | Dynasties | Color  |
+|----------------------------|--------------|-----------|--------|
+| Early Dynastic Period      | EDP          | 1-2       | <span style="color:violet;">Violet</span> |
+| Old Kingdom                | Old          | 3-7       | <span style="color:green;">Green</span>  |
+| First Intermediate Period  | FIP          | 8-10      | <span style="color:blue;">Blue</span>  |
+| Middle Kingdom             | Middle       | 11-14     | <span style="color:orange;">Orange</span> |
+| Second Intermediate Period | SIP          | 15-17     | <span style="color:yellow;">Yellow</span> |
+| New Kingdom                | New          | 18        | <span style="color:red;">Red</span>    |
+
   
-  **6. Сreate a map**
+## Interactive Map
 
 ![Map with known pyramids](https://www.dropbox.com/s/q6xy1v8ionlny74/map1.JPG?raw=1)
 
 ### :earth_africa: View in browser: [OpenStreetMap of 62 pyramids](https://lsind.github.io/map-of-Ancient-Egypt/map-pyramids.html)
+- Color coding: Pyramids are colored according to their historical period (Early Dynastic, Old Kingdom, etc.) as defined in Section 4, facilitating immediate chronological identification.
+- Glyphicon indicators: The use of open/closed eye icons provides a visual cue for the level of scholarly certainty regarding royal attribution:
+    - Eye-open (👁️): Pharaoh attribution is confirmed
+    - Eye-close: Pharaoh attribution is conjectural (indicated by "?" in the dataset)
+- Popup information: Clicking on any marker reveals the pyramid's modern name, enabling quick identification without visual clutter.
 
-   - glyphicon with open eye shows if Pharaoh' name is certain;
-   - popup shows the modern name of pyramid.
-
-**7. Create [Lepsius list](https://en.wikipedia.org/wiki/Lepsius_list_of_pyramids) and map**
-
-- Drop rows where Lepsius column contains NaN values; 
-- Create Lepsius map: zoom in to get the pyramids and the Pharaoh's name.
+## Lepsius List Visualization
+The Lepsius list, a seminal 19th-century catalog of Egyptian pyramids compiled by Karl Richard Lepsius, was isolated from the main dataset by filtering for entries with assigned Lepsius numbers.
 
 ![Lepsius Map](https://www.dropbox.com/s/fs0qougstmvdkow/mapL.JPG?raw=1)
 
-
 ### :earth_africa: View in browser: [OpenStreetMap of Lepsius list](https://lsind.github.io/map-of-Ancient-Egypt/map-Lepsius.html)
-
-   - red circle represents a pyramid with a roman number in it; zoom in!
-   - popup shows the owner's (pharaoh or his wife) name
+- Circular markers: Red circles provide high visibility against the terrain base layer
+- Roman numeral identifiers: Hover tooltips display the Lepsius number (I-LXVII) for immediate catalog reference
+- Ruler attribution popups: Clicking reveals the associated pharaoh or royal consort
+- Zoom-dependent detail: The higher zoom level (10) enables examination of spatial relationships between pyramids at individual sites
 
 ------------------------------
 
 ### &#x1F53A; The interactive maps in my [Kaggle notebook](https://www.kaggle.com/lsind18/pyramids-of-ancient-egypt-on-a-map)
-
-### :page_facing_up:  Source code on GitHub [.py and .ipynb](https://github.com/LSIND/map-of-Ancient-Egypt/tree/master/source)
 
 P.S. Feel free to contact me if you have some additional info about [Egyptian pyramids dataset](https://www.kaggle.com/lsind18/egyptianpyramids).
